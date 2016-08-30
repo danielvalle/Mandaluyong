@@ -1,0 +1,66 @@
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\ApplicationInsights.config
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\csc.exe
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\System.Collections.Immutable.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\vbc.exe
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\VBCSCompiler.exe
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\roslyn\VBCSCompiler.exe.config
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Mandaluyong.dll.config
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Mandaluyong.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Mandaluyong.pdb
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Web.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.WindowsServer.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.ApplicationInsights.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Web.xml
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.AI.WindowsServer.xml
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.ApplicationInsights.xml
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.csprojResolveAssemblyReference.cache
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.dll
+c:\users\zylahmae\documents\visual studio 2015\Projects\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.pdb
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\ApplicationInsights.config
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\csc.exe
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\vbc.exe
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\VBCSCompiler.exe
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Mandaluyong.dll.config
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Mandaluyong.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Mandaluyong.pdb
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Web.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Web.xml
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.csprojResolveAssemblyReference.cache
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.dll
+C:\Users\Israel\Downloads\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.pdb
