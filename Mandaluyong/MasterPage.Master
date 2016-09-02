@@ -44,6 +44,7 @@
 
 </head>
 <body>
+
     <form id="form1" runat="server">
         <div>
             <!--header start-->
@@ -55,7 +56,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><span>Mandaluyong</span></a>
+                        <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityName] FROM [tblCity]"></asp:SqlDataSource>
+                        <asp:ListView ID="CityInformationListView" runat="server" DataSourceID="CityInformationDataSource">
+                            <ItemTemplate>
+                                <a class="navbar-brand" href="#"><span><%# Eval("strCityName") %></span></a>
+                            </ItemTemplate>
+                        </asp:ListView>
+                        
                         <!-- DITO ILALAGAY YUNG LOGO BES-->
                     </div>
                     <div class="navbar-collapse collapse">
@@ -84,7 +91,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="adinfo.aspx" runat="server">City Information</a>
+                                        <a href="MaintenanceCityInformation.aspx" runat="server">City Information</a>
                                     </li>
                                     <li>
                                         <a href="adannounce.aspx" runat="server">Announcements</a>

@@ -10,24 +10,24 @@
 namespace Mandaluyong {
     
     
-    public partial class adinfo {
+    public partial class MaintenanceCityInformation {
         
         /// <summary>
-        /// LogoLabel control.
+        /// CityInformationDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LogoLabel;
+        protected global::System.Web.UI.WebControls.SqlDataSource CityInformationDataSource;
         
         /// <summary>
-        /// BannerLabel control.
+        /// CityInformationListView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BannerLabel;
+        protected global::System.Web.UI.WebControls.ListView CityInformationListView;
     }
 }

@@ -109,7 +109,7 @@
   <ItemGroup>
     <Content Include="adannounce.aspx" />
     <Content Include="adevent.aspx" />
-    <Content Include="adinfo.aspx" />
+    <Content Include="MaintenanceCityInformation.aspx" />
     <Content Include="admember.aspx" />
     <Content Include="adofficial.aspx" />
     <Content Include="Default.aspx" />
@@ -134,12 +134,12 @@
     <Compile Include="adevent.aspx.designer.cs">
       <DependentUpon>adevent.aspx</DependentUpon>
     </Compile>
-    <Compile Include="adinfo.aspx.cs">
-      <DependentUpon>adinfo.aspx</DependentUpon>
+    <Compile Include="MaintenanceCityInformation.aspx.cs">
+      <DependentUpon>MaintenanceCityInformation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="adinfo.aspx.designer.cs">
-      <DependentUpon>adinfo.aspx</DependentUpon>
+    <Compile Include="MaintenanceCityInformation.aspx.designer.cs">
+      <DependentUpon>MaintenanceCityInformation.aspx</DependentUpon>
     </Compile>
     <Compile Include="admember.aspx.cs">
       <DependentUpon>admember.aspx</DependentUpon>
