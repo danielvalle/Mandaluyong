@@ -191,6 +191,7 @@
     <Folder Include="fonts\" />
     <Folder Include="img\" />
     <Folder Include="js\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
