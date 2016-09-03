@@ -54,7 +54,7 @@ namespace Mandaluyong
                     da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityImage = @strCityImage Where intCityID = " + 1, con);
 
 
-                    da.UpdateCommand.Parameters.Add("@strCityImage", SqlDbType.NVarChar).Value = "~/Uploads/" + filename;
+                    da.UpdateCommand.Parameters.Add("@strCityImage", SqlDbType.NVarChar).Value = "Uploads/" + filename;
 
                     con.Open();
                     da.UpdateCommand.ExecuteNonQuery();
