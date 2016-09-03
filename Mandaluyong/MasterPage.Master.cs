@@ -11,7 +11,13 @@ namespace Mandaluyong
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Boolean adminTest = true;
 
+            if (!adminTest)
+            {
+                maintenance_dropdown.Visible = false;
+            } 
+            
         }
     }
 }

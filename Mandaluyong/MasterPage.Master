@@ -85,13 +85,13 @@
                             <li>
                                 <a href="#" runat="server">Officials</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown" id="maintenance_dropdown" runat="server">
                                 <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown"
                                     data-toggle="dropdown" href="#" runat="server">Maintenance <i class="fa fa-angle-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="MaintenanceCityInformation.aspx" runat="server">City Information</a>
+                                        <a href="MaintenanceCityInformation.aspx" id="Test" runat="server">City Information</a>
                                     </li>
                                     <li>
                                         <a href="adannounce.aspx" runat="server">Announcements</a>
@@ -100,7 +100,7 @@
                                         <a href="adevent.aspx" runat="server">Events</a>
                                     </li>
                                     <li>
-                                        <a href="adofficial.aspx" runat="server">Officials</a>
+                                        <a href="MaintenanceCityOfficial.aspx" runat="server">Officials</a>
                                     </li>
                                     <li>
                                         <a href="admember.aspx" runat="server">Members</a>

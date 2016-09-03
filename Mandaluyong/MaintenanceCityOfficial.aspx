@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="adofficial.aspx.cs" Inherits="Mandaluyong.adofficial" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MaintenanceCityOfficial.aspx.cs" Inherits="Mandaluyong.MaintenanceCityOfficial" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -21,7 +21,7 @@
 
             <div class="form-signin wow fadeInUp">
                 <h2 class="form-signin-heading">Officials Information</h2>
-                <div class="login-wrap">
+                    <div class="login-wrap">
                     <p>Enter Official Information</p>
 
                     <asp:Label ID="LogoLabel" runat="server">Official Profile:</asp:Label>
@@ -30,7 +30,9 @@
                     <asp:TextBox runat="server" CssClass="form-control" placeholder="First Name"></asp:TextBox>
                     <asp:TextBox runat="server" CssClass="form-control" placeholder="Middle Name"></asp:TextBox>
                     <asp:TextBox runat="server" CssClass="form-control" placeholder="Last Name"></asp:TextBox>
-                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Position"></asp:TextBox>
+                    <asp:SqlDataSource ID="OfficialPositionsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT * FROM [tblPosition]"></asp:SqlDataSource>
+                        <asp:DropDownList ID="OfficialPositionsDropDownList" runat="server" DataSourceID="OfficialPositionsDataSource" DataTextField="strPositionName" DataValueField="intPositionID">
+                        </asp:DropDownList>
                     <asp:TextBox runat="server" TextMode="MultiLine" CssClass="form-control" placeholder="Description"></asp:TextBox>
                     
 

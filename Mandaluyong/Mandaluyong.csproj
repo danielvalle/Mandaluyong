@@ -111,7 +111,7 @@
     <Content Include="adevent.aspx" />
     <Content Include="MaintenanceCityInformation.aspx" />
     <Content Include="admember.aspx" />
-    <Content Include="adofficial.aspx" />
+    <Content Include="MaintenanceCityOfficial.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="history.aspx" />
     <Content Include="missionvision.aspx" />
@@ -148,12 +148,12 @@
     <Compile Include="admember.aspx.designer.cs">
       <DependentUpon>admember.aspx</DependentUpon>
     </Compile>
-    <Compile Include="adofficial.aspx.cs">
-      <DependentUpon>adofficial.aspx</DependentUpon>
+    <Compile Include="MaintenanceCityOfficial.aspx.cs">
+      <DependentUpon>MaintenanceCityOfficial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="adofficial.aspx.designer.cs">
-      <DependentUpon>adofficial.aspx</DependentUpon>
+    <Compile Include="MaintenanceCityOfficial.aspx.designer.cs">
+      <DependentUpon>MaintenanceCityOfficial.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

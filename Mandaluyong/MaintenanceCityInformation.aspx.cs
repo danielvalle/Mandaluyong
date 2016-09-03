@@ -60,7 +60,7 @@ namespace Mandaluyong
                     da.UpdateCommand.ExecuteNonQuery();
                     con.Close();
 
-                    
+                    Image1.ImageUrl = "~/Uploads/" + filename;
 
                 }
                 catch (Exception ex)

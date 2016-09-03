@@ -75,9 +75,6 @@
                         City History:
                         <asp:Label ID="strCityHistoryLabel" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' />
                         <br />
-                        City Logo:
-                        <asp:Label ID="strCityImageLabel" CssClass="form-control" runat="server" Text='<%# Eval("strCityImage") %>' />
-                        <br />
                         <asp:Button ID="EditButton" class="btn btn-lg btn-login" runat="server" CommandName="Edit" Text="Edit" />
                         <br />
                         <br />
