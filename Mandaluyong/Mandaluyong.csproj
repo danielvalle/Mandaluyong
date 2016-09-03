@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\mandalogo.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -189,7 +190,6 @@
     <Folder Include="assets\" />
     <Folder Include="css\" />
     <Folder Include="fonts\" />
-    <Folder Include="img\" />
     <Folder Include="js\" />
     <Folder Include="Uploads\" />
   </ItemGroup>
