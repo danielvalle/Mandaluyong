@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="missionvision.aspx.cs" Inherits="Mandaluyong.missionvision" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MissionVision.aspx.cs" Inherits="Mandaluyong.MissionVision" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <!--breadcrumbs start-->
+    <!--breadcrumbs start-->
     <div class="breadcrumbs">
         <div class="container">
             <div class="row">
@@ -17,9 +17,9 @@
 
 
     <!-- mission and vision goes here -->
-    <div class="container"  style="padding-bottom: 2em">
+    <div class="container" style="padding-bottom: 2em">
 
-        <!--mission -->
+        <!--mission and vision -->
         <div class="row">
             <div class="col-lg-5">
                 <div class="about-carousel wow fadeInLeft">
@@ -64,64 +64,36 @@
                     </div>
                 </div>
             </div>
+            <asp:SqlDataSource ID="CityMissionVisionDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityMission], [strCityVision] FROM [tblCity]"></asp:SqlDataSource>
+            <asp:FormView ID="CityMissionFormView" runat="server" DataSourceID="CityMissionVisionDataSource">
+                <ItemTemplate>
 
-            <div class="col-lg-7 about wow fadeInRight">
-                <h2>Mission</h2>
+                    <div class="col-lg-7 about wow fadeInRight">
+                        <h2>Mission</h2>
 
-                <h4>
-                    To protect and promote the right of every Filipino to quality, equitable, culture-based and complete basic education where:               
-                </h4>
-                <ul class="list-unstyled">
-                    <li>
-                        <i class="fa fa-angle-right pr-10"></i>
-                        Students learn in a child-friendly, gender -sensitive, safe, and motivating environment.</li>
+                        <asp:Label ID="strCityMissionLabel" runat="server" Text='<%# Bind("strCityMission") %>' />
+                    </div>
 
-                    <li>
-                        <i class="fa fa-angle-right pr-10"></i>
-                        Teachers facilitate learning and constantly nurture every learner.</li>
+                    <div class="col-lg-7 about wow fadeInRight">
+                        <h2>Vision</h2>
 
-                    <li>
-                        <i class="fa fa-angle-right pr-10"></i>
-                        Administrators and Staff, as stewards of the institution, ensure an enabling and supportive environment for effective learning to happen.</li>
+                        <asp:Label ID="strCityVisionLabel" runat="server" Text='<%# Bind("strCityVision") %>' />
+                    </div>
+                    <br />
 
-                    <li>
-                        <i class="fa fa-angle-right pr-10"></i>
-                        Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners.</li>
+                    </div>
+        <!--mission and vision -->
 
-                </ul>
 
-            </div>
-        </div>
-        <!--mission -->
 
-        <!-- vision -->
-        <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-7 about wow fadeInRight">
-                <h2>Vision</h2>
-
-                <h4>
-                    We dream of Filipinos who passionately love their country and whose competencies and values enable them to realize their full potential and contribute meaningfully to building the nation.
-                </h4>
-                <h4>
-                    As a learner-centered public institution, the Department of Education continuously improves itself to better serve its stakeholders.
-                </h4>
-
-            </div>
+                </ItemTemplate>
+            </asp:FormView>
 
 
 
         </div>
-
-
-
-        <!-- vision -->
-
 
     </div>
 
-
-
     <!-- mission and vision goes here -->
-
 </asp:Content>

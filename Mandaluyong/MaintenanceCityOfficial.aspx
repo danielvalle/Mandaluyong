@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MaintenanceCityOfficial.aspx.cs" Inherits="Mandaluyong.MaintenanceCityOfficial" %>
 
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -18,7 +20,6 @@
 
     <div class="registration-bg">
         <div class="container">
-
             <div class="form-signin wow fadeInUp">
                 <h2 class="form-signin-heading">Officials Information</h2>
                     <div class="login-wrap">
@@ -34,14 +35,13 @@
                         <asp:DropDownList ID="OfficialPositionsDropDownList" runat="server" DataSourceID="OfficialPositionsDataSource" DataTextField="strPositionName" DataValueField="intPositionID">
                         </asp:DropDownList>
                     <asp:TextBox runat="server" TextMode="MultiLine" CssClass="form-control" placeholder="Description"></asp:TextBox>
-                    
 
                     <br />
                     <br />
-                    <center><button class="btn btn-lg btn-login type="submit">Save</button>
-                    <button class="btn btn-lg btn-login type="submit">Delete</button></center>
-
-
+                    <center>
+                        <button class="btn btn-lg btn-login" type="submit">Save</button>
+                        <button class="btn btn-lg btn-login" type="submit">Delete</button>
+                    </center>
                 </div>
             </div>
 
