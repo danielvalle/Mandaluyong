@@ -59,30 +59,30 @@
 
                         <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityName], [strCityImage] FROM [tblCity]"></asp:SqlDataSource>
                         <asp:ListView ID="CityInformationListView" runat="server" DataSourceID="CityInformationDataSource">
-                            
+
 
                             <ItemTemplate>
 
-                                
-                                <a class="navbar-brand" href="#" style="margin-left: -15px; position: relative; top: -.2em">
-                                <img alt="brand" src='<%# Eval("strCityImage") %>' style="width: 80px; padding-right:0.5em; padding-bottom:0.5em"/>
-                                <span><%# Eval("strCityName") %></span></a>
+
+                                <a class="navbar-brand" href="Default.aspx" style="margin-left: -15px; position: relative; top: -.2em">
+                                    <img alt="brand" src='<%# Eval("strCityImage") %>' style="width: 80px; padding-right: 0.5em; padding-bottom: 0.5em" />
+                                    <span><%# Eval("strCityName") %></span></a>
 
                             </ItemTemplate>
                         </asp:ListView>
-                        
+
                         <!-- DITO ILALAGAY YUNG LOGO BES-->
                     </div>
                     <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav" style="padding-top:0.7em">
+                        <ul class="nav navbar-nav" style="padding-top: 0.7em">
                             <li>
-                                <a href="default.aspx" runat="server">Home</a>
+                                <a href="Default.aspx" runat="server">Home</a>
                             </li>
                             <li>
-                                <a href="history.aspx" runat="server">History</a>
+                                <a href="History.aspx" runat="server">History</a>
                             </li>
                             <li>
-                                <a href="missionvision.aspx" runat="server">Mission and Vision</a>
+                                <a href="MissionVision.aspx" runat="server">Mission and Vision</a>
                             </li>
                             <li>
                                 <a href="#" runat="server">Announcements</a>
@@ -121,8 +121,10 @@
             </header>
             <!--header end-->
 
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+           
         </div>
 
         <!--small footer start -->

@@ -19,7 +19,7 @@
 
         <asp:FormView ID="CityHistoryFormView" runat="server" DataSourceID="CityHistoryDataSource">
             <ItemTemplate>
-                <asp:Label ID="strCityHistoryLabel" runat="server" Text='<%# Bind("strCityHistory") %>' />
+                <asp:Label ID="strCityHistoryPreview" runat="server" Text='<%# Bind("strCityHistory") %>' />
                 <br />
             </ItemTemplate>
         </asp:FormView>
