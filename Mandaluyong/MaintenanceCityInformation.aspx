@@ -15,8 +15,8 @@
 
     <!--container start-->
     <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" OldValuesParameterFormatString="original_{0}"
-        SelectCommand="SELECT * FROM [tblCity]" 
-        UpdateCommand="UPDATE [tblCity] SET [strCityName] = @strCityName, [strCityMission] = @strCityMission, [strCityVision] = @strCityVision WHERE [intCityID] = @original_intCityID AND (([strCityName] = @original_strCityName) OR ([strCityName] IS NULL AND @original_strCityName IS NULL)) AND (([strCityMission] = @original_strCityMission) OR ([strCityMission] IS NULL AND @original_strCityMission IS NULL)) AND (([strCityVision] = @original_strCityVision) OR ([strCityVision] IS NULL AND @original_strCityVision IS NULL)) AND (([strCityHistory] = @original_strCityHistory) OR ([strCityHistory] IS NULL AND @original_strCityHistory IS NULL))">
+        SelectCommand="SELECT * FROM [tblCity]"
+        UpdateCommand="UPDATE [tblCity] SET [strCityName] = @strCityName, [strCityMission] = @strCityMission, [strCityVision] = @strCityVision, [strCityHistory] = @strCityHistory WHERE [intCityID] = @original_intCityID AND (([strCityName] = @original_strCityName) OR ([strCityName] IS NULL AND @original_strCityName IS NULL)) AND (([strCityMission] = @original_strCityMission) OR ([strCityMission] IS NULL AND @original_strCityMission IS NULL)) AND (([strCityVision] = @original_strCityVision) OR ([strCityVision] IS NULL AND @original_strCityVision IS NULL)) AND (([strCityHistory] = @original_strCityHistory) OR ([strCityHistory] IS NULL AND @original_strCityHistory IS NULL))">
         <UpdateParameters>
             <asp:Parameter Name="strCityName" Type="String" />
             <asp:Parameter Name="strCityMission" Type="String" />
@@ -33,10 +33,11 @@
         <div class="container">
             <div class="col-md-2"></div>
             <div class="form-signin wow fadeInUp col-md-8">
-                
+
                 <h2 class="form-signin-heading">City Information</h2>
 
-                <br /><br />
+                <br />
+                <br />
                 <center>
                 <asp:Label ID="strCityLogoLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="CityLogo">City Logo: </asp:Label><br />
                     <br />
@@ -88,44 +89,44 @@
 
                         <asp:Button ID="UpdateButton" runat="server" class="btn btn-lg btn-login pull-left" CommandName="Update" Text="Update" />
                         <asp:Button ID="CancelButton" runat="server" class="btn btn-lg btn-login pull-right" CommandName="Cancel" Text="Cancel" />
-                        
+
                     </EditItemTemplate>
                     <ItemTemplate>
 
                         <div class="form-group">
                             <asp:Label ID="strCityNameItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityNamePreview">City Name: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Textbox ID="strCityNamePreview" ReadOnly="true" CssClass="form-control" runat="server" Text='<%# Eval("strCityName") %>' /><br />
+                                <asp:TextBox ID="strCityNamePreview" ReadOnly="true" CssClass="form-control" runat="server" Text='<%# Eval("strCityName") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityMissionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionPreview">City Mission: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Textbox ID="strCityMissionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
-                            </div>
+                                <asp:TextBox Wrap="true" Rows="10" BorderStyle="None" BorderWidth="0" TextMode="MultiLine" ReadOnly = "true" ID="strCityMissionPreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
+                            </div
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityVisionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionPreview">City Vision: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Textbox ID="strCityVisionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
+                                <asp:TextBox ID="strCityVisionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityHistoryItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryPreview">City History: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Textbox ID="strCityHistoryPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
+                                <asp:TextBox ID="strCityHistoryPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
                             </div>
                         </div>
                         <br />
                         <br />
                         <br />
 
-                        
-                            <asp:Button ID="EditButton" class="btn btn-lg btn-login pull-right" runat="server" CommandName="Edit" Text="Edit" />
-                        
+
+                        <asp:Button ID="EditButton" class="btn btn-lg btn-login pull-right" runat="server" CommandName="Edit" Text="Edit" />
+
 
                     </ItemTemplate>
 
