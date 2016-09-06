@@ -75,13 +75,13 @@
         <asp:FormView ID="CityMissionFormView" runat="server" DataSourceID="CityMissionVisionDataSource">
             <ItemTemplate>
 
-                <div class="col-lg-7 about wow fadeInRight">
+                <div class="about wow fadeInRight">
                     <h2>Mission</h2>
 
                     <asp:Label ID="strCityMissionLabel" runat="server" Text='<%# Bind("strCityMission") %>' />
                 </div>
 
-                <div class="col-lg-7 about wow fadeInRight">
+                <div class="about wow fadeInRight">
                     <h2>Vision</h2>
 
                     <asp:Label ID="strCityVisionLabel" runat="server" Text='<%# Bind("strCityVision") %>' />
