@@ -15,7 +15,7 @@
     </div>
     <!--breadcrumbs end-->
 
-    <div class="container" style="padding-bottom: 2em; background-image: url(img/bg.jpg)">
+    <div class="container" style="padding-bottom: 2em">
 
 
         <div class="about-carousel wow fadeInLeft">

@@ -95,28 +95,28 @@
                         <div class="form-group">
                             <asp:Label ID="strCityNameItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityNamePreview">City Name: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Label ID="strCityNamePreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityName") %>' /><br />
+                                <asp:Textbox ID="strCityNamePreview" ReadOnly="true" CssClass="form-control" runat="server" Text='<%# Eval("strCityName") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityMissionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionPreview">City Mission: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Label ID="strCityMissionPreview" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
+                                <asp:Textbox ID="strCityMissionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityVisionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionPreview">City Vision: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Label ID="strCityVisionPreview" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
+                                <asp:Textbox ID="strCityVisionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityHistoryItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryPreview">City History: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Label ID="strCityHistoryPreview" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
+                                <asp:Textbox ID="strCityHistoryPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
                             </div>
                         </div>
                         <br />
