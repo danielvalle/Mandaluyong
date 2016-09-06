@@ -14,50 +14,27 @@
     </div>
 
     <!--container start-->
-    <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:dbwebprog %>"
-        InsertCommand="INSERT INTO [tblCity] ([strCityName], [strCityMission], [strCityVision], [strCityHistory], [strCityLogo], [strCityBanner]) VALUES (@strCityName, @strCityMission, @strCityVision, @strCityHistory, @strCityLogo, @strCityBanner)" OldValuesParameterFormatString="original_{0}"
-        SelectCommand="SELECT * FROM [tblCity]" UpdateCommand="UPDATE [tblCity] SET [strCityName] = @strCityName, [strCityMission] = @strCityMission, [strCityVision] = @strCityVision, [strCityHistory] = @strCityHistory, [strCityLogo] = @strCityLogo, [strCityBanner] = @strCityBanner WHERE [intCityID] = @original_intCityID AND (([strCityName] = @original_strCityName) OR ([strCityName] IS NULL AND @original_strCityName IS NULL)) AND (([strCityMission] = @original_strCityMission) OR ([strCityMission] IS NULL AND @original_strCityMission IS NULL)) AND (([strCityVision] = @original_strCityVision) OR ([strCityVision] IS NULL AND @original_strCityVision IS NULL)) AND (([strCityHistory] = @original_strCityHistory) OR ([strCityHistory] IS NULL AND @original_strCityHistory IS NULL)) AND (([strCityLogo] = @original_strCityLogo) OR ([strCityLogo] IS NULL AND @original_strCityLogo IS NULL)) AND (([strCityBanner] = @original_strCityBanner) OR ([strCityBanner] IS NULL AND @original_strCityBanner IS NULL))" DeleteCommand="DELETE FROM [tblCity] WHERE [intCityID] = @original_intCityID AND (([strCityName] = @original_strCityName) OR ([strCityName] IS NULL AND @original_strCityName IS NULL)) AND (([strCityMission] = @original_strCityMission) OR ([strCityMission] IS NULL AND @original_strCityMission IS NULL)) AND (([strCityVision] = @original_strCityVision) OR ([strCityVision] IS NULL AND @original_strCityVision IS NULL)) AND (([strCityHistory] = @original_strCityHistory) OR ([strCityHistory] IS NULL AND @original_strCityHistory IS NULL)) AND (([strCityLogo] = @original_strCityLogo) OR ([strCityLogo] IS NULL AND @original_strCityLogo IS NULL)) AND (([strCityBanner] = @original_strCityBanner) OR ([strCityBanner] IS NULL AND @original_strCityBanner IS NULL))">
-        <DeleteParameters>
-            <asp:Parameter Name="original_intCityID" Type="Int32" />
-            <asp:Parameter Name="original_strCityName" Type="String" />
-            <asp:Parameter Name="original_strCityMission" Type="String" />
-            <asp:Parameter Name="original_strCityVision" Type="String" />
-            <asp:Parameter Name="original_strCityHistory" Type="String" />
-            <asp:Parameter Name="original_strCityLogo" Type="String" />
-            <asp:Parameter Name="original_strCityBanner" Type="String" />
-        </DeleteParameters>
-        <InsertParameters>
-            <asp:Parameter Name="strCityName" Type="String" />
-            <asp:Parameter Name="strCityMission" Type="String" />
-            <asp:Parameter Name="strCityVision" Type="String" />
-            <asp:Parameter Name="strCityHistory" Type="String" />
-            <asp:Parameter Name="strCityLogo" Type="String" />
-            <asp:Parameter Name="strCityBanner" Type="String" />
-        </InsertParameters>
+    <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" OldValuesParameterFormatString="original_{0}"
+        SelectCommand="SELECT * FROM [tblCity]" 
+        UpdateCommand="UPDATE [tblCity] SET [strCityName] = @strCityName, [strCityMission] = @strCityMission, [strCityVision] = @strCityVision WHERE [intCityID] = @original_intCityID AND (([strCityName] = @original_strCityName) OR ([strCityName] IS NULL AND @original_strCityName IS NULL)) AND (([strCityMission] = @original_strCityMission) OR ([strCityMission] IS NULL AND @original_strCityMission IS NULL)) AND (([strCityVision] = @original_strCityVision) OR ([strCityVision] IS NULL AND @original_strCityVision IS NULL)) AND (([strCityHistory] = @original_strCityHistory) OR ([strCityHistory] IS NULL AND @original_strCityHistory IS NULL))">
         <UpdateParameters>
             <asp:Parameter Name="strCityName" Type="String" />
             <asp:Parameter Name="strCityMission" Type="String" />
             <asp:Parameter Name="strCityVision" Type="String" />
             <asp:Parameter Name="strCityHistory" Type="String" />
-            <asp:Parameter Name="strCityLogo" Type="String" />
-            <asp:Parameter Name="strCityBanner" Type="String" />
             <asp:Parameter Name="original_intCityID" Type="Int32" />
             <asp:Parameter Name="original_strCityName" Type="String" />
             <asp:Parameter Name="original_strCityMission" Type="String" />
             <asp:Parameter Name="original_strCityVision" Type="String" />
             <asp:Parameter Name="original_strCityHistory" Type="String" />
-            <asp:Parameter Name="original_strCityLogo" Type="String" />
-            <asp:Parameter Name="original_strCityBanner" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
     <div id="itemPlaceholderContainer" runat="server" class="registration-bg">
         <div class="container">
             <div class="col-md-2"></div>
             <div class="form-signin wow fadeInUp col-md-8">
-
                 
                 <h2 class="form-signin-heading">City Information</h2>
-
 
                 <br /><br />
                 <center>
@@ -109,13 +86,10 @@
                         </div>
                         <br />
 
-                        
                         <asp:Button ID="UpdateButton" runat="server" class="btn btn-lg btn-login pull-left" CommandName="Update" Text="Update" />
                         <asp:Button ID="CancelButton" runat="server" class="btn btn-lg btn-login pull-right" CommandName="Cancel" Text="Cancel" />
                         
-
                     </EditItemTemplate>
-
                     <ItemTemplate>
 
                         <div class="form-group">

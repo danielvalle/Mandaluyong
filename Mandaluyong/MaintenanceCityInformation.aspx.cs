@@ -52,7 +52,7 @@ namespace Mandaluyong
                     cmd.Connection = con;
 
                     SqlDataAdapter da = new SqlDataAdapter();
-                    da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityImage = @strCityLogo Where intCityID = " + 1, con);
+                    da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityLogo = @`Logo Where intCityID = " + 1, con);
 
 
                     da.UpdateCommand.Parameters.Add("@strCityLogo", SqlDbType.NVarChar).Value = "Uploads/" + filename;

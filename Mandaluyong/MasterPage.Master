@@ -57,7 +57,7 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityName], [strCityImage] FROM [tblCity]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityName], [strCityLogo], [strCityBanner] FROM [tblCity]"></asp:SqlDataSource>
                         <asp:ListView ID="CityInformationListView" runat="server" DataSourceID="CityInformationDataSource">
 
 
