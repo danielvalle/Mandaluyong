@@ -31,76 +31,76 @@ namespace Mandaluyong {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemPlaceholderContainer;
         
         /// <summary>
-        /// strCityLogoEditLabel control.
+        /// strCityLogoLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label strCityLogoEditLabel;
+        protected global::System.Web.UI.WebControls.Label strCityLogoLabel;
         
         /// <summary>
-        /// Image1 control.
+        /// CityLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image CityLogo;
         
         /// <summary>
-        /// btnUploadImage control.
+        /// btnUploadLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUploadImage;
+        protected global::System.Web.UI.WebControls.Button btnUploadLogo;
         
         /// <summary>
-        /// strCityImageFileUpload control.
+        /// strCityLogoFileUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload strCityImageFileUpload;
+        protected global::System.Web.UI.WebControls.FileUpload strCityLogoFileUpload;
         
         /// <summary>
-        /// Label1 control.
+        /// strCityBannerLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label strCityBannerLabel;
         
         /// <summary>
-        /// Image2 control.
+        /// CityBanner control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Image CityBanner;
         
         /// <summary>
-        /// Button1 control.
+        /// btnUploadBanner control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnUploadBanner;
         
         /// <summary>
-        /// FileUpload1 control.
+        /// strCityBannerFileUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.FileUpload strCityBannerFileUpload;
         
         /// <summary>
         /// CityInformationListView control.
