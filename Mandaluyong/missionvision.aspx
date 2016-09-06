@@ -75,16 +75,39 @@
         <asp:FormView ID="CityMissionFormView" runat="server" DataSourceID="CityMissionVisionDataSource">
             <ItemTemplate>
 
+<<<<<<< HEAD
                 <div class="about wow fadeInRight">
                     <h2>Mission</h2>
+=======
+>>>>>>> 9e6ebec7567bae549f4f50947a44f392c933b83e
 
-                    <asp:Label ID="strCityMissionLabel" runat="server" Text='<%# Bind("strCityMission") %>' />
+                <div class="about wow fadeInRight">
+                    <br />
+                    <h2 class="text-center" style="text-shadow: 2px 2px 4px #949090; color: #383838">Mission</h2>
+                    <br />
+                    <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+                    <br />
+                    <p style="font-size: 18px; text-align: justify; color: #2d2c2c">
+                        <asp:Label ID="strCityMissionLabel" runat="server" Text='<%# Bind("strCityMission") %>' /></p>
                 </div>
 
+<<<<<<< HEAD
                 <div class="about wow fadeInRight">
                     <h2>Vision</h2>
 
                     <asp:Label ID="strCityVisionLabel" runat="server" Text='<%# Bind("strCityVision") %>' />
+=======
+                <br />
+                <hr />
+                <br />
+                <div class="about wow fadeInRight">
+                    <h2 class="text-center" style="text-shadow: 2px 2px 4px #949090; color: #383838">Vision</h2>
+                    <br />
+                    <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+                    <br />
+                    <p style="font-size: 18px; text-align: justify; color: #2d2c2c">
+                        <asp:Label ID="strCityVisionLabel" runat="server" Text='<%# Bind("strCityVision") %>' /></p>
+>>>>>>> 9e6ebec7567bae549f4f50947a44f392c933b83e
                 </div>
                 <br />
 

@@ -74,7 +74,9 @@
         <div class="form-signin wow fadeInUp">
             <asp:FormView ID="CityHistoryFormView" runat="server" DataSourceID="CityHistoryDataSource">
                 <ItemTemplate>
-                    <p>
+
+                    <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+                    <p style="font-size: 18px; text-align: justify; color: #2d2c2c">
                         <asp:Label ID="strCityHistoryPreview" runat="server" Text='<%# Bind("strCityHistory") %>' /></p>
                     <br />
                 </ItemTemplate>
