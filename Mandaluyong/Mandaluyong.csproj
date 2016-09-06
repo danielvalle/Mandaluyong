@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\bg.jpg" />
+    <Content Include="img\divider.png" />
     <Content Include="img\mandalogo.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
