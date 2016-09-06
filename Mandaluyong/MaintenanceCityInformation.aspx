@@ -79,7 +79,7 @@
                         </div>
 
                         <div class="form-group">
-                            <asp:Label ID="strCityHistoryEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryEditTextBox">City Mission: </asp:Label><br />
+                            <asp:Label ID="strCityHistoryEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryEditTextBox">City History: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
                                 <asp:TextBox ID="strCityHistoryEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityHistory") %>' /><br />
                             </div>
