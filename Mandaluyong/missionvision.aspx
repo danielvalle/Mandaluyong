@@ -17,7 +17,7 @@
 
 
     <!-- mission and vision goes here -->
-    <div class="container" style="padding-bottom: 2em">
+    <div class="container" style="padding-bottom: 2em; ">
 
         <!--mission and vision -->
         <div class="row">
