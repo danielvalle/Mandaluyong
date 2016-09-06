@@ -98,6 +98,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\bg.jpg" />
     <Content Include="img\mandalogo.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -194,6 +195,8 @@
     <Folder Include="assets\" />
     <Folder Include="css\" />
     <Folder Include="fonts\" />
+    <Folder Include="img\history\" />
+    <Folder Include="img\mv\" />
     <Folder Include="js\" />
     <Folder Include="Uploads\" />
   </ItemGroup>

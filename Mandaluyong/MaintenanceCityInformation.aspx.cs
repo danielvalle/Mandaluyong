@@ -15,7 +15,7 @@ namespace Mandaluyong
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string queryString = "SELECT strCityImage FROM dbo.tblCity;";
+            string queryString = "SELECT strCityLogo, strCityBanner FROM dbo.tblCity;";
             using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["dbwebprog"].ConnectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
@@ -25,7 +25,8 @@ namespace Mandaluyong
                 {
                     while (reader.Read())
                     {
-                        Image1.ImageUrl = (String)reader["strCityImage"];
+                        CityLogo.ImageUrl = (String)reader["strCityLogo"];
+                        CityBanner.ImageUrl = (String)reader["strCityBanner"];
                     }
                 }   
                 catch(Exception ex)
@@ -35,15 +36,15 @@ namespace Mandaluyong
 }
         }
 
-        protected void UploadButton_Click(object sender, EventArgs e)
+        protected void UploadLogoButton_Click(object sender, EventArgs e)
         {
-            if (strCityImageFileUpload.HasFile)
+            if (strCityLogoFileUpload.HasFile)
             {
                 try
                 {
 
-                    string filename = Path.GetFileName(strCityImageFileUpload.FileName);
-                    strCityImageFileUpload.SaveAs(Server.MapPath("~/Uploads/") + filename);
+                    string filename = Path.GetFileName(strCityLogoFileUpload.FileName);
+                    strCityLogoFileUpload.SaveAs(Server.MapPath("~/Uploads/") + filename);
 
                     SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbwebprog"].ConnectionString);
 
@@ -51,16 +52,16 @@ namespace Mandaluyong
                     cmd.Connection = con;
 
                     SqlDataAdapter da = new SqlDataAdapter();
-                    da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityImage = @strCityImage Where intCityID = " + 1, con);
+                    da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityLogo = @`Logo Where intCityID = " + 1, con);
 
 
-                    da.UpdateCommand.Parameters.Add("@strCityImage", SqlDbType.NVarChar).Value = "Uploads/" + filename;
+                    da.UpdateCommand.Parameters.Add("@strCityLogo", SqlDbType.NVarChar).Value = "Uploads/" + filename;
 
                     con.Open();
                     da.UpdateCommand.ExecuteNonQuery();
                     con.Close();
 
-                    Image1.ImageUrl = "~/Uploads/" + filename;
+                    CityLogo.ImageUrl = "~/Uploads/" + filename;
 
                 }
                 catch (Exception ex)
@@ -69,5 +70,41 @@ namespace Mandaluyong
                 }
             }
         }
+
+        protected void UploadBannerButton_Click(object sender, EventArgs e)
+        {
+            if (strCityBannerFileUpload.HasFile)
+            {
+                try
+                {
+
+                    string filename = Path.GetFileName(strCityBannerFileUpload.FileName);
+                    strCityBannerFileUpload.SaveAs(Server.MapPath("~/Uploads/") + filename);
+
+                    SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbwebprog"].ConnectionString);
+
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = con;
+
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityBanner = @strCityBanner Where intCityID = " + 1, con);
+
+
+                    da.UpdateCommand.Parameters.Add("@strCityBanner", SqlDbType.NVarChar).Value = "Uploads/" + filename;
+
+                    con.Open();
+                    da.UpdateCommand.ExecuteNonQuery();
+                    con.Close();
+
+                    CityBanner.ImageUrl = "~/Uploads/" + filename;
+
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+        }
+
     }
 }
