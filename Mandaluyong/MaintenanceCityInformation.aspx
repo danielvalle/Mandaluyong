@@ -50,6 +50,14 @@
                 <asp:FileUpload ID="strCityImageFileUpload" CssClass="btn btn-login btn-sm" runat="server" /><br />
                 </center>
 
+                <center>
+                <asp:Label ID="Label1" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="Image1">City Banner: </asp:Label><br />
+                    <br />
+                <asp:Image ID="Image2" runat="server" CssClass="img img-thumbnail img-responsive"/><br /><br />
+                <asp:Button ID="Button1" Text="Upload Image" CssClass="btn btn-login" runat="server" OnClick="UploadButton_Click" />
+                <asp:FileUpload ID="FileUpload1" CssClass="btn btn-login btn-sm" runat="server" /><br />
+                </center>
+
 
                 <asp:ListView ID="CityInformationListView" runat="server" DataKeyNames="intCityID" DataSourceID="CityInformationDataSource">
                     <EditItemTemplate>
@@ -64,21 +72,21 @@
                         <div class="form-group">
                             <asp:Label ID="strCityMissionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionEditTextBox">City Mission: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox ID="strCityMissionEditTextBox" CssClass="form-control" runat="server" Text='<%# Bind("strCityMission") %>' /><br />
+                                <asp:TextBox ID="strCityMissionEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityMission") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityVisionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionEditTextBox">City Vision: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox ID="strCityVisionEditTextBox" CssClass="form-control" runat="server" Text='<%# Bind("strCityVision") %>' /><br />
+                                <asp:TextBox ID="strCityVisionEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityVision") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityHistoryEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryEditTextBox">City Mission: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox ID="strCityHistoryEditTextBox" CssClass="form-control" runat="server" Text='<%# Bind("strCityHistory") %>' /><br />
+                                <asp:TextBox ID="strCityHistoryEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityHistory") %>' /><br />
                             </div>
                         </div>
                         <br />
@@ -102,21 +110,21 @@
                         <div class="form-group">
                             <asp:Label ID="strCityMissionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionPreview">City Mission: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Label ID="strCityMissionPreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
+                                <asp:Label ID="strCityMissionPreview" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityVisionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionPreview">City Vision: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Label ID="strCityVisionPreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
+                                <asp:Label ID="strCityVisionPreview" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityHistoryItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryPreview">City History: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:Label ID="strCityHistoryPreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
+                                <asp:Label ID="strCityHistoryPreview" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
                             </div>
                         </div>
                         <br />
