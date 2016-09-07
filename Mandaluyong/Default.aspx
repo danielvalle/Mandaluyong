@@ -3,6 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
     <!-- Sequence Modern Slider -->
     <div id="da-slider" class="da-slider">
 
@@ -77,6 +78,8 @@
 
     <!-- Sequence Modern Slider -->
 
+
+
     <div class="container">
         <div class="row mar-b-50">
             <div class="col-md-12">
@@ -131,8 +134,22 @@
 
                 <!--feature end-->
             </div>
+
         </div>
+
+            <div>
+        <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityName], [strCityLogo], [strCityBanner] FROM [tblCity]"></asp:SqlDataSource>
+        <asp:ListView ID="CityInformationListView" runat="server" DataSourceID="CityInformationDataSource">
+            <ItemTemplate>
+                <img class="img img-responsive" src='<%# Eval("strCityBanner") %>' alt="" style="text-align: center" />
+            </ItemTemplate>
+        </asp:ListView>
+
     </div>
+
+    </div>
+
+
 
     <!--property start-->
     <div class="property gray-bg">
@@ -410,7 +427,7 @@
                             <h3>Main Trunkline
                             </h3>
                             <p>
-                               532-5001
+                                532-5001
                             </p>
                         </div>
                     </div>
@@ -452,7 +469,7 @@
                             <h3>Hospital
                             </h3>
                             <p>
-                               532-0480
+                                532-0480
                             </p>
                         </div>
                     </div>
@@ -465,7 +482,4 @@
 
     </div>
     <!-- service end -->
-
-
-
 </asp:Content>

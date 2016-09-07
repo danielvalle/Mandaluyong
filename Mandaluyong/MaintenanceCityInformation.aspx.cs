@@ -89,7 +89,6 @@ namespace Mandaluyong
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityBanner = @strCityBanner Where intCityID = " + 1, con);
 
-
                     da.UpdateCommand.Parameters.Add("@strCityBanner", SqlDbType.NVarChar).Value = "Uploads/" + filename;
 
                     con.Open();
