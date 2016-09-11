@@ -90,7 +90,7 @@
                                 <a href="#" runat="server">Events</a>
                             </li>
                             <li>
-                                <a href="#" runat="server">Officials</a>
+                                <a href="CityOfficials.aspx" runat="server">Officials</a>
                             </li>
                             <li class="dropdown" id="maintenance_dropdown" runat="server">
                                 <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown"

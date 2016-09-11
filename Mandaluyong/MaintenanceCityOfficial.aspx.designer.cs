@@ -13,13 +13,76 @@ namespace Mandaluyong {
     public partial class MaintenanceCityOfficial {
         
         /// <summary>
-        /// LogoLabel control.
+        /// strCityLogoLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LogoLabel;
+        protected global::System.Web.UI.WebControls.Label strCityLogoLabel;
+        
+        /// <summary>
+        /// strOfficialFNameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strOfficialFNameLabel;
+        
+        /// <summary>
+        /// strOfficialFNameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox strOfficialFNameTextBox;
+        
+        /// <summary>
+        /// strOfficiaMNameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strOfficiaMNameLabel;
+        
+        /// <summary>
+        /// strOfficiaMNameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox strOfficiaMNameTextBox;
+        
+        /// <summary>
+        /// strOfficiaLNameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strOfficiaLNameLabel;
+        
+        /// <summary>
+        /// strOfficialLNameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox strOfficialLNameTextBox;
+        
+        /// <summary>
+        /// strOfficialPosition control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strOfficialPosition;
         
         /// <summary>
         /// OfficialPositionsDataSource control.
@@ -38,5 +101,23 @@ namespace Mandaluyong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList OfficialPositionsDropDownList;
+        
+        /// <summary>
+        /// strOfficialDescLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strOfficialDescLabel;
+        
+        /// <summary>
+        /// strOfficialDescTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox strOfficialDescTextBox;
     }
 }

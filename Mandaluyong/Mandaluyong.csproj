@@ -102,6 +102,7 @@
     <Content Include="App_Data\dbwebprog_log.ldf">
       <DependentUpon>dbwebprog.mdf</DependentUpon>
     </Content>
+    <Content Include="CityOfficials.aspx" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\divider.png" />
     <Content Include="img\mandalogo.png" />
@@ -144,6 +145,13 @@
     </Compile>
     <Compile Include="adevent.aspx.designer.cs">
       <DependentUpon>adevent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CityOfficials.aspx.cs">
+      <DependentUpon>CityOfficials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CityOfficials.aspx.designer.cs">
+      <DependentUpon>CityOfficials.aspx</DependentUpon>
     </Compile>
     <Compile Include="MaintenanceCityInformation.aspx.cs">
       <DependentUpon>MaintenanceCityInformation.aspx</DependentUpon>

@@ -70,21 +70,21 @@
                         <div class="form-group">
                             <asp:Label ID="strCityMissionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionEditTextBox">City Mission: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; max-height:100%; max-width:100%" ID="strCityMissionEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityMission") %>' /><br />
+                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityMissionEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityMission") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityVisionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionEditTextBox">City Vision: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; max-height:100%; max-width:100%" ID="strCityVisionEditTextBox" TextMode="MultiLine" Columns="70" Rows="5" CssClass="form-control" runat="server" Text='<%# Bind("strCityVision") %>' /><br />
+                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityVisionEditTextBox" TextMode="MultiLine" Columns="70" Rows="5" CssClass="form-control" runat="server" Text='<%# Bind("strCityVision") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityHistoryEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryEditTextBox">City History: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; max-height:100%; max-width:100%" ID="strCityHistoryEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityHistory") %>' /><br />
+                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityHistoryEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityHistory") %>' /><br />
                             </div>
                         </div>
                         <br />
@@ -105,21 +105,21 @@
                         <div class="form-group">
                             <asp:Label ID="strCityMissionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionPreview">City Mission: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; max-height:100%; max-width:100%" TextMode="MultiLine" ReadOnly = "true" ID="strCityMissionPreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
+                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" TextMode="MultiLine" ReadOnly = "true" ID="strCityMissionPreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
                             </div
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityVisionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionPreview">City Vision: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; max-height:100%; max-width:100%" ID="strCityVisionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
+                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityVisionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="strCityHistoryItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryPreview">City History: </asp:Label><br />
                             <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; max-height:100%; max-width:100%" ID="strCityHistoryPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
+                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityHistoryPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
                             </div>
                         </div>
                         <br />
