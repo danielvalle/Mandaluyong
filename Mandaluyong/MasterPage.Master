@@ -84,10 +84,10 @@
                                 <a href="MissionVision.aspx" runat="server">Mission and Vision</a>
                             </li>
                             <li>
-                                <a href="#" runat="server">Announcements</a>
+                                <a href="Announcement.aspx" runat="server">Announcements</a>
                             </li>
                             <li>
-                                <a href="#" runat="server">Events</a>
+                                <a href="Events.aspx" runat="server">Events</a>
                             </li>
                             <li>
                                 <a href="CityOfficials.aspx" runat="server">Officials</a>
