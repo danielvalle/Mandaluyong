@@ -15,7 +15,7 @@ namespace Mandaluyong
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string queryString = "SELECT strCityLogo, strCityBanner FROM dbo.tblCity;";
+            string queryString = "SELECT strCityLogo, strCityBanner FROM tblCity;";
             using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["dbwebprog"].ConnectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
@@ -52,7 +52,7 @@ namespace Mandaluyong
                     cmd.Connection = con;
 
                     SqlDataAdapter da = new SqlDataAdapter();
-                    da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityLogo = @`Logo Where intCityID = " + 1, con);
+                    da.UpdateCommand = new SqlCommand(@"Update [tblCity] Set strCityLogo = @strCityLogo Where intCityID = " + 1, con);
 
 
                     da.UpdateCommand.Parameters.Add("@strCityLogo", SqlDbType.NVarChar).Value = "Uploads/" + filename;
