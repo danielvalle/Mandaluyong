@@ -104,6 +104,9 @@
       <DependentUpon>dbwebprog.mdf</DependentUpon>
     </Content>
     <Content Include="CityOfficials.aspx" />
+    <Content Include="datetimepicker\jquery.datetimepicker.css" />
+    <Content Include="datetimepicker\jquery.datetimepicker.full.min.js" />
+    <Content Include="datetimepicker\jquery.js" />
     <Content Include="Events.aspx" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\divider.png" />
@@ -121,8 +124,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="adannounce.aspx" />
-    <Content Include="adevent.aspx" />
+    <Content Include="MaintenanceAnnouncements.aspx" />
+    <Content Include="MaintenanceEvents.aspx" />
     <Content Include="MaintenanceCityInformation.aspx" />
     <Content Include="admember.aspx" />
     <Content Include="MaintenanceCityOfficial.aspx" />
@@ -131,22 +134,24 @@
     <Content Include="MissionVision.aspx" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="UserRegister.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adannounce.aspx.cs">
-      <DependentUpon>adannounce.aspx</DependentUpon>
+    <Compile Include="MaintenanceAnnouncements.aspx.cs">
+      <DependentUpon>MaintenanceAnnouncements.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="adannounce.aspx.designer.cs">
-      <DependentUpon>adannounce.aspx</DependentUpon>
+    <Compile Include="MaintenanceAnnouncements.aspx.designer.cs">
+      <DependentUpon>MaintenanceAnnouncements.aspx</DependentUpon>
     </Compile>
-    <Compile Include="adevent.aspx.cs">
-      <DependentUpon>adevent.aspx</DependentUpon>
+    <Compile Include="MaintenanceEvents.aspx.cs">
+      <DependentUpon>MaintenanceEvents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="adevent.aspx.designer.cs">
-      <DependentUpon>adevent.aspx</DependentUpon>
+    <Compile Include="MaintenanceEvents.aspx.designer.cs">
+      <DependentUpon>MaintenanceEvents.aspx</DependentUpon>
     </Compile>
     <Compile Include="Announcement.aspx.cs">
       <DependentUpon>Announcement.aspx</DependentUpon>
@@ -219,6 +224,20 @@
       <DependentUpon>MissionVision.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegister.aspx.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegister.aspx.designer.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
