@@ -41,11 +41,11 @@
                 <br />
                 <br />
                 <center>
-                <asp:Label ID="strCityLogoLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="CityLogo">City Logo: </asp:Label><br />
-                    <br />
-                <asp:Image ID="CityLogo" runat="server" CssClass="img img-thumbnail img-responsive"/><br /><br />
-                <asp:Button ID="btnUploadLogo" Text="Upload Image" CssClass="btn btn-login" runat="server" OnClick="UploadLogoButton_Click" />
-                <asp:FileUpload ID="strCityLogoFileUpload" CssClass="btn btn-login btn-sm" runat="server" /><br />
+                    <asp:Label ID="strCityLogoLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="CityLogo">City Logo: </asp:Label><br />
+                        <br />
+                    <asp:Image ID="CityLogo" runat="server" CssClass="img img-thumbnail img-responsive"/><br /><br />
+                    <asp:Button ID="btnUploadLogo" Text="Upload Image" CssClass="btn btn-login" runat="server" OnClick="UploadLogoButton_Click" />
+                    <asp:FileUpload ID="strCityLogoFileUpload" CssClass="btn btn-login btn-sm" runat="server" /><br />
                 </center>
 
                 <center>

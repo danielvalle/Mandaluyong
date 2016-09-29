@@ -10,7 +10,25 @@
 namespace Mandaluyong {
     
     
-    public partial class adevent {
+    public partial class MaintenanceEvents {
+        
+        /// <summary>
+        /// strEventImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strEventImage;
+        
+        /// <summary>
+        /// EventImageFileUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload EventImageFileUpload;
         
         /// <summary>
         /// strEventNameLabel control.
@@ -49,13 +67,31 @@ namespace Mandaluyong {
         protected global::System.Web.UI.WebControls.TextBox strEventDescTextBox;
         
         /// <summary>
+        /// lblEventStart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEventStart;
+        
+        /// <summary>
         /// dtmEventStart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dtmEventStart;
+        protected global::System.Web.UI.WebControls.TextBox dtmEventStart;
+        
+        /// <summary>
+        /// lblEventEnd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEventEnd;
         
         /// <summary>
         /// dtmEventEnd control.
@@ -64,6 +100,33 @@ namespace Mandaluyong {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dtmEventEnd;
+        protected global::System.Web.UI.WebControls.TextBox dtmEventEnd;
+        
+        /// <summary>
+        /// btnAddEvent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddEvent;
+        
+        /// <summary>
+        /// EventsDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource EventsDataSource;
+        
+        /// <summary>
+        /// EventsListView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView EventsListView;
     }
 }

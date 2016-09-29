@@ -31,6 +31,24 @@ namespace Mandaluyong {
         protected global::System.Web.UI.WebControls.TextBox txtAnnouncementDetail;
         
         /// <summary>
+        /// lblAnnouncementEnd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAnnouncementEnd;
+        
+        /// <summary>
+        /// dtmAnnouncementEnd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox dtmAnnouncementEnd;
+        
+        /// <summary>
         /// btnAddAnnouncement control.
         /// </summary>
         /// <remarks>
@@ -38,5 +56,23 @@ namespace Mandaluyong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAddAnnouncement;
+        
+        /// <summary>
+        /// AnnouncementDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource AnnouncementDataSource;
+        
+        /// <summary>
+        /// AnnouncementListView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView AnnouncementListView;
     }
 }

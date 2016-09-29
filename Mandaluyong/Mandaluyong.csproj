@@ -111,6 +111,7 @@
     <Content Include="img\bg.jpg" />
     <Content Include="img\divider.png" />
     <Content Include="img\mandalogo.png" />
+    <Content Include="MaintenanceAnnouncement.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -124,13 +125,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Content Include="MaintenanceAnnouncement.aspx" />
-    <Content Include="adevent.aspx" />
-=======
-    <Content Include="MaintenanceAnnouncements.aspx" />
     <Content Include="MaintenanceEvents.aspx" />
->>>>>>> 8dc1b776833cdd454a21c68fe7bcf9d42025fe00
     <Content Include="MaintenanceCityInformation.aspx" />
     <Content Include="admember.aspx" />
     <Content Include="MaintenanceCityOfficial.aspx" />
@@ -144,21 +139,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="MaintenanceAnnouncement.aspx.cs">
       <DependentUpon>MaintenanceAnnouncement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MaintenanceAnnouncement.aspx.designer.cs">
       <DependentUpon>MaintenanceAnnouncement.aspx</DependentUpon>
-=======
-    <Compile Include="MaintenanceAnnouncements.aspx.cs">
-      <DependentUpon>MaintenanceAnnouncements.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MaintenanceAnnouncements.aspx.designer.cs">
-      <DependentUpon>MaintenanceAnnouncements.aspx</DependentUpon>
->>>>>>> 8dc1b776833cdd454a21c68fe7bcf9d42025fe00
     </Compile>
     <Compile Include="MaintenanceEvents.aspx.cs">
       <DependentUpon>MaintenanceEvents.aspx</DependentUpon>

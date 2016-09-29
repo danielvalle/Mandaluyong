@@ -19,31 +19,31 @@ namespace Mandaluyong
 
         protected void AddAnnouncementButton_Click(object sender, EventArgs e)
         {
-                try
-                {
-                    SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbwebprog"].ConnectionString);
+            try
+            {
+                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbwebprog"].ConnectionString);
 
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.Connection = con;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
 
-                    SqlDataAdapter da = new SqlDataAdapter();
-                    da.InsertCommand = new SqlCommand("Insert INTO tblAnnouncement(strAnnouncementName, strAnnouncementDetail, dtAnnouncementDate) VALUES" +
-                                                    "(@strAnnouncementName, @strAnnouncementDetail, @dtAnnouncementDate)", con);
+                SqlDataAdapter da = new SqlDataAdapter();
+                da.InsertCommand = new SqlCommand("Insert INTO tblAnnouncement(strAnnouncementName, strAnnouncementDetail, dtAnnouncementDate, intBoolIsActive) VALUES" +
+                                                "(@strAnnouncementName, @strAnnouncementDetail, @dtAnnouncementDate, 0)", con);
 
-                    da.InsertCommand.Parameters.Add("@strAnnouncementName", SqlDbType.NVarChar).Value = txtAnnouncementName.Text;
-                    da.InsertCommand.Parameters.Add("@strAnnouncementDetail", SqlDbType.NVarChar).Value = txtAnnouncementDetail.Text;
-                    da.InsertCommand.Parameters.Add("@dtAnnouncementDate", SqlDbType.NVarChar).Value = DateTime.Now.ToString("M/dd/yyy");
+                da.InsertCommand.Parameters.Add("@strAnnouncementName", SqlDbType.NVarChar).Value = txtAnnouncementName.Text;
+                da.InsertCommand.Parameters.Add("@strAnnouncementDetail", SqlDbType.NVarChar).Value = txtAnnouncementDetail.Text;
+                da.InsertCommand.Parameters.Add("@dtAnnouncementDate", SqlDbType.NVarChar).Value = DateTime.Now.ToString("M/dd/yyy");
 
-                    con.Open();
-                    da.InsertCommand.ExecuteNonQuery();
-                    con.Close();
-                }
-                catch (Exception ex)
-                {
-                  
-                }
-                
-                Response.Redirect(Request.RawUrl);
-        }
+                con.Open();
+                da.InsertCommand.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            Response.Redirect(Request.RawUrl);
+        }   
     }
 }

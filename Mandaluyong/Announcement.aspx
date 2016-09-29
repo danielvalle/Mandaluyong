@@ -30,7 +30,7 @@
       </div>
     </div>
     <!--breadcrumbs end-->
-    <asp:SqlDataSource ID="AnnouncementDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strAnnouncementName], [strAnnouncementDetail], [dtAnnouncementDate] FROM [tblAnnouncement]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="AnnouncementDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [intAnnouncementID], [strAnnouncementName], [strAnnouncementDetail], [dtAnnouncementDate], [intBoolIsActive] FROM [tblAnnouncement] WHERE [intBoolIsActive] = 1"></asp:SqlDataSource>
     <asp:ListView ID="AnnouncementListView" runat="server" DataSourceID="AnnouncementDataSource">
         <ItemTemplate>
             <!--container start-->
@@ -41,19 +41,19 @@
               <div class="blog-item">
                 <div class="row">
                   <div class="col-lg-2 col-sm-2">
-                    <div class="date-wrap">
+                    <!--<div class="date-wrap">
                       <span class="date">
                         21
                       </span>
                       <span class="month">
                         September
                       </span>
-                    </div>
+                    </div>-->
 
                   </div>
                   <div class="col-lg-10 col-sm-10">
                     <div class="blog-img gs">
-                      <img src="image/ev1.jpg" alt=""/>
+                      <img src="" alt=""/>
                     </div>
 
                   </div>

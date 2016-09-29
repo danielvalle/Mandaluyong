@@ -109,14 +109,10 @@
                                         <a href="MaintenanceCityInformation.aspx" id="Test" runat="server">City Information</a>
                                     </li>
                                     <li>
-<<<<<<< HEAD
                                         <a href="MaintenanceAnnouncement.aspx" runat="server">Announcements</a>
-=======
-                                        <a href="MaintenanceAnnouncements.aspx" runat="server">Announcements</a>
->>>>>>> 8dc1b776833cdd454a21c68fe7bcf9d42025fe00
                                     </li>
                                     <li>
-                                        <a href="adevent.aspx" runat="server">Events</a>
+                                        <a href="MaintenanceEvents.aspx" runat="server">Events</a>
                                     </li>
                                     <li>
                                         <a href="MaintenanceCityOfficial.aspx" runat="server">Officials</a>
