@@ -34,6 +34,14 @@
     <script type="text/javascript" src="js/parallax-slider/modernizr.custom.28468.js">
     </script>
 
+
+    <!-- Date time picker script and css -->
+    <script src="datetimepicker/jquery.js"></script>
+    <script src="datetimepicker/jquery.datetimepicker.full.min.js"></script>
+    <link href="datetimepicker/jquery.datetimepicker.css" rel="stylesheet" />
+
+
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js">
@@ -101,7 +109,11 @@
                                         <a href="MaintenanceCityInformation.aspx" id="Test" runat="server">City Information</a>
                                     </li>
                                     <li>
+<<<<<<< HEAD
                                         <a href="MaintenanceAnnouncement.aspx" runat="server">Announcements</a>
+=======
+                                        <a href="MaintenanceAnnouncements.aspx" runat="server">Announcements</a>
+>>>>>>> 8dc1b776833cdd454a21c68fe7bcf9d42025fe00
                                     </li>
                                     <li>
                                         <a href="adevent.aspx" runat="server">Events</a>
