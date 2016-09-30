@@ -10,24 +10,33 @@
 namespace Mandaluyong {
     
     
-    public partial class Announcement {
+    public partial class MaintenanceAnnouncement {
         
         /// <summary>
-        /// AnnouncementDataSource control.
+        /// txtAnnouncementName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource AnnouncementDataSource;
+        protected global::System.Web.UI.WebControls.TextBox txtAnnouncementName;
         
         /// <summary>
-        /// AnnouncementListView control.
+        /// txtAnnouncementDetail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView AnnouncementListView;
+        protected global::System.Web.UI.WebControls.TextBox txtAnnouncementDetail;
+        
+        /// <summary>
+        /// btnAddAnnouncement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddAnnouncement;
     }
 }

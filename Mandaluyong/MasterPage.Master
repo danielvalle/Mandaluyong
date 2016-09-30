@@ -101,7 +101,7 @@
                                         <a href="MaintenanceCityInformation.aspx" id="Test" runat="server">City Information</a>
                                     </li>
                                     <li>
-                                        <a href="adannounce.aspx" runat="server">Announcements</a>
+                                        <a href="MaintenanceAnnouncement.aspx" runat="server">Announcements</a>
                                     </li>
                                     <li>
                                         <a href="adevent.aspx" runat="server">Events</a>

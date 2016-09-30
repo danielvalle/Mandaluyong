@@ -30,69 +30,71 @@
       </div>
     </div>
     <!--breadcrumbs end-->
+    <asp:SqlDataSource ID="AnnouncementDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strAnnouncementName], [strAnnouncementDetail], [dtAnnouncementDate] FROM [tblAnnouncement]"></asp:SqlDataSource>
+    <asp:ListView ID="AnnouncementListView" runat="server" DataSourceID="AnnouncementDataSource">
+        <ItemTemplate>
+            <!--container start-->
+        <div class="container">
+          <div class="row">
+            <!--blog start-->
+            <div class="col-lg-11">
+              <div class="blog-item">
+                <div class="row">
+                  <div class="col-lg-2 col-sm-2">
+                    <div class="date-wrap">
+                      <span class="date">
+                        21
+                      </span>
+                      <span class="month">
+                        September
+                      </span>
+                    </div>
 
-    <!--container start-->
-    <div class="container">
-      <div class="row">
-        <!--blog start-->
-        <div class="col-lg-11">
-          <div class="blog-item">
-            <div class="row">
-              <div class="col-lg-2 col-sm-2">
-                <div class="date-wrap">
-                  <span class="date">
-                    21
-                  </span>
-                  <span class="month">
-                    September
-                  </span>
+                  </div>
+                  <div class="col-lg-10 col-sm-10">
+                    <div class="blog-img gs">
+                      <img src="image/ev1.jpg" alt=""/>
+                    </div>
+
+                  </div>
                 </div>
-
-              </div>
-              <div class="col-lg-10 col-sm-10">
-                <div class="blog-img gs">
-                  <img src="image/ev1.jpg" alt=""/>
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
+                <div class="row">
 			
-			<!-- for extra spaces-->
-              <div class="col-lg-2 col-sm-2 ">
-              </div>
-			<!-- for extra spaces-->
+			    <!-- for extra spaces-->
+                  <div class="col-lg-2 col-sm-2 ">
+                  </div>
+			    <!-- for extra spaces-->
 			
-						  <div class="col-lg-10 col-sm-10">
+						      <div class="col-lg-10 col-sm-10">
 						  
-							<div class="container">
-								<div class="row no-gutter" style="background-color:rgba(51,51,51,0.7);" >
+							    <div class="container">
+								    <div class="row no-gutter" style="background-color:rgba(51,51,51,0.7);" >
 						  
-									<div  style="padding:4%!important;"  >
-										<center><h2 style="font-family:georgia; font-size:35px; color:white;" >Mandaluyong City Government</h2><br>
-										<p style="text-align: justify; font-family:georgia; font-size:18px; color:  #d9d9d9; text-indent: 50px;">The City of Mandaluyong is governed by a Mayor, a Vice-Mayor and a twelve-member City Council or Sangguniang Panlungsod, who are elected to serve three-year terms, in accordance with the provisions of her City Charter.
-										In addition, the city is represented in the national congress by a lone Representative.</p>
-
-										<br><p style="text-align: justify; font-family:georgia; font-size:18px; color: #d9d9d9; text-indent: 50px;">The Mayor, Vice Mayor and the city's Representative are elected at large through a city-wide election. while the members of the Sanggunian are elected by district (six for each of Mandaluyong's two political districts).</p>
-
-										<br><p style="text-align: justify; font-family:georgia; font-size:18px; color: #d9d9d9; text-indent: 50px;">The districts are subdivided into barangays, each governed by a Chairman elected to a five-year term through barangay-level elections. Mandaluyong is comprised of 27 barangays: 14 in District I and 13 in District II.</p>
-
-										<br><p style="text-align: justify; font-family:georgia; font-size:18px; color: #d9d9d9; text-indent: 50px;">Municipal services are delegated to City Departments which are headed by professionally qualified and experienced personnel appointed by the Mayor in his capacity as chief executive.</p>
-
-										<br><p style="text-align: justify; font-family:georgia; font-size:18px; color: #d9d9d9; text-indent: 50px;">The city government and its offices are housed in different buildings at the City Hall Complex in Maysilo Circle, Brgy. Plainview. The names and locations of these buildings are shown in Map ~ City Hall Complex. </p></center>
-									</div>
-								</div>
-							</div>
+									    <div  style="padding:4%!important;"  >
+										    <center>
+                                                <h2 style="font-family:georgia; font-size:35px; color:white;" ><%# Eval("strAnnouncementName") %></h2><br />
+										        <p style="text-align: justify; font-family:georgia; font-size:18px; color:  #d9d9d9; text-indent: 50px;">
+                                                    <%# Eval("strAnnouncementDetail")%>
+										        </p>
+                                            </center>
+									    </div>
+								    </div>
+							    </div>
 		
 	
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-    <!--container end-->
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+        </div>
+        <!--container end-->
+        </ItemTemplate>
+
+    </asp:ListView>
+
+    
 	
 	</div> <!-- FOR BACKGROUND-->
 

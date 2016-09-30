@@ -121,7 +121,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="adannounce.aspx" />
+    <Content Include="MaintenanceAnnouncement.aspx" />
     <Content Include="adevent.aspx" />
     <Content Include="MaintenanceCityInformation.aspx" />
     <Content Include="admember.aspx" />
@@ -134,12 +134,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adannounce.aspx.cs">
-      <DependentUpon>adannounce.aspx</DependentUpon>
+    <Compile Include="MaintenanceAnnouncement.aspx.cs">
+      <DependentUpon>MaintenanceAnnouncement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="adannounce.aspx.designer.cs">
-      <DependentUpon>adannounce.aspx</DependentUpon>
+    <Compile Include="MaintenanceAnnouncement.aspx.designer.cs">
+      <DependentUpon>MaintenanceAnnouncement.aspx</DependentUpon>
     </Compile>
     <Compile Include="adevent.aspx.cs">
       <DependentUpon>adevent.aspx</DependentUpon>
