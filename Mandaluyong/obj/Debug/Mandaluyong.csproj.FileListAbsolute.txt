@@ -131,3 +131,36 @@ C:\Users\Israel\Documents\Mandaluyong\Mandaluyong\bin\Microsoft.CodeDom.Provider
 C:\Users\Israel\Documents\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.csprojResolveAssemblyReference.cache
 C:\Users\Israel\Documents\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.dll
 C:\Users\Israel\Documents\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.pdb
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\ApplicationInsights.config
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\csc.exe
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\vbc.exe
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\VBCSCompiler.exe
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Mandaluyong.dll.config
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Mandaluyong.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Mandaluyong.pdb
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Web.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.Web.xml
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.csprojResolveAssemblyReference.cache
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.dll
+C:\Users\Camille Escobar\Desktop\Mandalulu\Mandaluyong\Mandaluyong\obj\Debug\Mandaluyong.pdb

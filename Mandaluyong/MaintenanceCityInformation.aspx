@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MaintenanceCityInformation.aspx.cs" Inherits="Mandaluyong.MaintenanceCityInformation" %>
 
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="breadcrumbs">
@@ -33,111 +34,165 @@
     </asp:SqlDataSource>
     <div id="itemPlaceholderContainer" runat="server" class="registration-bg">
         <div class="container">
-            <div class="col-md-2"></div>
-            <div class="form-signin wow fadeInUp col-md-8">
 
-                <h2 class="form-signin-heading">City Information</h2>
+            <div class="wow fadeInUp">
+                <div class="col-lg-10 col-lg-offset-1"><br /><br />
+                    <section class="panel" style="background-color: #ffffff; border-style: double; border-color: #48cfad;">
+                        <header class="panel-heading" style="color: #ffffff">
+                            <center><h4>City Information</h4></center>
+                        </header>
 
-                <br />
-                <br />
-                <center>
-                    <asp:Label ID="strCityLogoLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="CityLogo">City Logo: </asp:Label><br />
-                        <br />
-                    <asp:Image ID="CityLogo" runat="server" CssClass="img img-thumbnail img-responsive"/><br /><br />
-                    <asp:Button ID="btnUploadLogo" Text="Upload Image" CssClass="btn btn-login" runat="server" OnClick="UploadLogoButton_Click" />
-                    <asp:FileUpload ID="strCityLogoFileUpload" CssClass="btn btn-login btn-sm" runat="server" /><br />
-                </center>
+                        <div class="panel-body"> <br />
+                            <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
+                                <center>
+                                <div >
+                                    <asp:Label font-size="24px" ID="strCityLogoLabel" runat="server" CssClass="control-label col-md-12 col-sm-12"  AssociatedControlID="CityLogo">City Logo: </asp:Label>
+                       
+                                </div>
 
-                <center>
-                <asp:Label ID="strCityBannerLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityBannerLabel">City Banner: </asp:Label><br />
-                    <br />
-                <asp:Image ID="CityBanner" runat="server" CssClass="img img-thumbnail img-responsive"/><br /><br />
-                <asp:Button ID="btnUploadBanner" Text="Upload Image" CssClass="btn btn-login" runat="server" OnClick="UploadBannerButton_Click" />
-                <asp:FileUpload ID="strCityBannerFileUpload" CssClass="btn btn-login btn-sm" runat="server" />
-                    <br />
-                </center>
-
-                <asp:ListView ID="CityInformationListView" runat="server" DataKeyNames="intCityID" DataSourceID="CityInformationDataSource">
-                    <EditItemTemplate>
-
-                        <div class="form-group">
-                            <asp:Label ID="strCityNameEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityNameEditTextBox">City Name: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12" style="text-align: center;">
-                                <asp:TextBox ID="strCityNameEditTextBox" CssClass="form-control" runat="server" Text='<%# Bind("strCityName") %>' /><br />
+                                    <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> <br />
+                 
+                                
+                                    <asp:Image ID="CityLogo" runat="server" CssClass="img img-thumbnail img-responsive"/><br /><br />
+                                    <asp:Button ID="btnUploadLogo" Text="Upload Image" CssClass="btn btn-success" runat="server" OnClick="UploadLogoButton_Click" />
+                                    <asp:FileUpload ID="strCityLogoFileUpload" CssClass="btn btn-login btn-sm" runat="server" /><br />
+                              
+                                </center>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <asp:Label ID="strCityMissionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionEditTextBox">City Mission: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityMissionEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityMission") %>' /><br />
+                            <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
+                                <center>
+                                <div><br /><br />
+                                    <asp:Label font-size="24px" ID="strCityBannerLabel" runat="server" CssClass="control-label" AssociatedControlID="strCityBannerLabel">City Banner: </asp:Label>
+                                </div>
+
+                                    <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /><br />
+
+                                    <asp:Image ID="CityBanner" runat="server" CssClass="img img-thumbnail img-responsive"/><br /><br />
+                                    <asp:Button ID="btnUploadBanner" Text="Upload Image" CssClass="btn btn-success" runat="server" OnClick="UploadBannerButton_Click" />
+                                    <asp:FileUpload ID="strCityBannerFileUpload" CssClass="btn btn-login btn-sm" runat="server" /><br />
+                                </center>
                             </div>
+
+
+       <asp:ListView ID="CityInformationListView" runat="server" DataKeyNames="intCityID" DataSourceID="CityInformationDataSource">
+          <EditItemTemplate>
+
+             <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                  <center>
+                      <asp:Label font-size="24px"  ID="strCityNameEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityNameEditTextBox">City Name: </asp:Label><br />
+
+                          <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+
+                       <div class="col-md-12 col-sm-12" style="text-align: center;"><br />
+                                <asp:TextBox color="black" ID="strCityNameEditTextBox" CssClass="form-control" runat="server" Text='<%# Bind("strCityName") %>' /><br />
+                       </div>
+                   </center><br />                       
+             </div>
+
+             <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                  <center>
+                      <asp:Label font-size="24px" ID="strCityMissionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionEditTextBox">City Mission: </asp:Label>
+                            
+                          <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+                           
+                       <div class="col-md-12 col-sm-12"><br />
+                           <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityMissionEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityMission") %>' /><br />
                         </div>
+                  </center> <br />                    
+             </div>
 
-                        <div class="form-group">
-                            <asp:Label ID="strCityVisionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionEditTextBox">City Vision: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityVisionEditTextBox" TextMode="MultiLine" Columns="70" Rows="5" CssClass="form-control" runat="server" Text='<%# Bind("strCityVision") %>' /><br />
-                            </div>
-                        </div>
+             <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                 <center>
+                     <asp:Label font-size="24px" ID="strCityVisionEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionEditTextBox">City Vision: </asp:Label><br />
 
-                        <div class="form-group">
-                            <asp:Label ID="strCityHistoryEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryEditTextBox">City History: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12">
-                                <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityHistoryEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityHistory") %>' /><br />
-                            </div>
-                        </div>
-                        <br />
+                         <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+                             
+                      <div class="col-md-12 col-sm-12"><br />
+                          <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityVisionEditTextBox" TextMode="MultiLine" Columns="70" Rows="5" CssClass="form-control" runat="server" Text='<%# Bind("strCityVision") %>' /><br />
+                      </div>
+                  </center>  <br />
+            </div>
 
-                        <asp:Button ID="UpdateButton" runat="server" class="btn btn-lg btn-login pull-left" CommandName="Update" Text="Update" />
-                        <asp:Button ID="CancelButton" runat="server" class="btn btn-lg btn-login pull-right" CommandName="Cancel" Text="Cancel" />
+             <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                 <center>
+                     <asp:Label font-size="24px" ID="strCityHistoryEditLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryEditTextBox">City History: </asp:Label><br />
 
-                    </EditItemTemplate>
-                    
-                    <ItemTemplate>
-                        <div class="form-group">
-                            <asp:Label ID="strCityNameItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityNamePreview">City Name: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12">
+                         <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                     <div class="col-md-12 col-sm-12"> <br />
+                          <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityHistoryEditTextBox" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Bind("strCityHistory") %>' /><br />
+                      </div>
+                  </center> <br />
+             </div>
+
+             <div class="col-lg-10 col-lg-offset-1"><br /><br />
+                  <center>
+                        <asp:Button ID="UpdateButton" runat="server" class="btn btn-lg btn-login" CommandName="Update" Text="Update" />
+                        <asp:Button ID="CancelButton" runat="server" class="btn btn-lg btn-login" CommandName="Cancel" Text="Cancel" />
+                  </center>
+             </div>
+
+      </EditItemTemplate>
+            <ItemTemplate>
+                  <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                            <asp:Label font-size="24px" ID="strCityNameItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityNamePreview">City Name: </asp:Label><br />
+
+                            <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+
+                            <div class="col-md-12 col-sm-12"><br />
                                 <asp:TextBox ID="strCityNamePreview" ReadOnly="true" CssClass="form-control" runat="server" Text='<%# Eval("strCityName") %>' /><br />
                             </div>
-                        </div>
+                        </center> <br />
+                   </div>
 
-                        <div class="form-group">
-                            <asp:Label ID="strCityMissionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionPreview">City Mission: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12">
+                   <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                            <asp:Label  font-size="24px" ID="strCityMissionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityMissionPreview">City Mission: </asp:Label><br />
+
+                            <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+
+                            <div class="col-md-12 col-sm-12"><br />
                                 <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" TextMode="MultiLine" ReadOnly = "true" ID="strCityMissionPreview" CssClass="form-control" runat="server" Text='<%# Eval("strCityMission") %>' /><br />
                             </div
-                        </div>
+                        </center><br />
+                    </div>
 
-                        <div class="form-group">
-                            <asp:Label ID="strCityVisionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionPreview">City Vision: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12">
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                         <center>
+                            <asp:Label  font-size="24px" ID="strCityVisionItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityVisionPreview">City Vision: </asp:Label><br />
+
+                            <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
+
+                            <div class="col-md-12 col-sm-12"><br />
                                 <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityVisionPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityVision") %>' /><br />
                             </div>
-                        </div>
+                        </center>  <br />            
+                    </div>
 
-                        <div class="form-group">
-                            <asp:Label ID="strCityHistoryItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryPreview">City History: </asp:Label><br />
-                            <div class="col-md-12 col-sm-12">
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                         <center>
+                            <asp:Label  font-size="24px" ID="strCityHistoryItemLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strCityHistoryPreview">City History: </asp:Label><br />
+
+                            <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                            <div class="col-md-12 col-sm-12"><br />
                                 <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" ID="strCityHistoryPreview" ReadOnly="true" TextMode="MultiLine" Rows="4" CssClass="form-control" runat="server" Text='<%# Eval("strCityHistory") %>' /><br />
                             </div>
+                        </center><br />
+                    </div><br />
+
+                    <div class="col-lg-10 col-lg-offset-1"><br /><br />
+                         <center>
+                            <asp:Button ID="EditButton" class="btn btn-lg btn-login" runat="server" CommandName="Edit" Text="Edit" /></center><br /><br />
+                    </div>
+           </ItemTemplate>
+       </asp:ListView>
                         </div>
-                        <br />
-                        <br />
-                        <br />
-
-
-                        <asp:Button ID="EditButton" class="btn btn-lg btn-login pull-right" runat="server" CommandName="Edit" Text="Edit" />
-
-
-                    </ItemTemplate>
-
-
-                </asp:ListView>
-
-
+                    </section>
+                </div>
             </div>
-            <div class="col-md-2"></div>
         </div>
     </div>
 </asp:Content>

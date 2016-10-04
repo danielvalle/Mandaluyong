@@ -12,6 +12,8 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet" />
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet">-->
 
+  
+
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/flexslider.css" />
@@ -40,6 +42,11 @@
     <script src="datetimepicker/jquery.datetimepicker.full.min.js"></script>
     <link href="datetimepicker/jquery.datetimepicker.css" rel="stylesheet" />
 
+    <style>
+    .form-control{
+        color:black!important;
+    }
+    </style>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->

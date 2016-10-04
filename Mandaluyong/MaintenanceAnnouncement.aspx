@@ -3,7 +3,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <div class="breadcrumbs">
+
+
+
+    <div class="breadcrumbs">
         <div class="container">
             <div class="row">
                 <div>
@@ -17,36 +20,60 @@
     <!--container start-->
 
     <div class="registration-bg">
-        <div class="container">
+        <div class="container"><br /><br />
 
-            <div class="form-signin wow fadeInUp">
-                <h2 class="form-signin-heading">Announcement</h2>
-                <div class="login-wrap">
-                    <p>Enter Announcement Information</p>
+            <div class="wow fadeInUp">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <section class="panel" style="background-color: #ffffff; border-style: double; border-color: #48cfad;">
+                        <header class="panel-heading" style="color: #ffffff">
+                            <center><h4>Announcement Information</h4></center>
+                        </header>
+                <div class="panel-body"> <br />
 
-                  
-                    <asp:TextBox id="txtAnnouncementName" runat="server" CssClass="form-control" placeholder="Announcement Name"></asp:TextBox>
-                    <asp:TextBox id="txtAnnouncementDetail" runat="server" TextMode="MultiLine" CssClass="form-control" placeholder="Announcement Description"></asp:TextBox><br />
-              <!--      <asp:Label ID="lblAnnouncementEnd" runat="server" CssClass="control-label col-md-12 col-sm-12">End Date: </asp:Label><br />
-                    <asp:TextBox runat="server" id="dtmAnnouncementEnd" CssClass="datetimepicker form-control" type="text" />  -->
+                     <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
+                         <center>
+                            <asp:Label font-size="24px" runat="server" CssClass="control-label col-md-12 col-sm-12"  >Announcement Name: </asp:Label>
 
-                    <br />
-                    <br />
-                    <center>
-                        <asp:Button id="btnAddAnnouncement" runat="server" class="btn btn-lg btn-login" type="submit" Text="Add" OnClick="AddAnnouncementButton_Click"/>
+                            <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                             <div class="col-md-12 col-sm-12"><br />
+                            <asp:TextBox ID="txtAnnouncementName" CssClass="form-control" runat="server"></asp:TextBox><br /><br />
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                            <asp:Label font-size="24px" runat="server" CssClass="control-label col-md-12 col-sm-12"  >Announcement Details: </asp:Label>
+
+                            <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                            <div class="col-md-12 col-sm-12"><br />
+                            <asp:TextBox  style="overflow-y:scroll; min-height:150px; max-height:100%; max-width:100%" TextMode="MultiLine" Rows="4" ID="txtAnnouncementDetail" runat="server" CssClass="form-control" ></asp:TextBox><br /><br />
+                        <!--      <asp:Label ID="lblAnnouncementEnd" runat="server" CssClass="control-label col-md-12 col-sm-12">End Date: </asp:Label><br />
+                         <asp:TextBox runat="server" id="dtmAnnouncementEnd" CssClass="datetimepicker form-control" type="text" />  -->
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="col-lg-10 col-lg-offset-1"><br /><br />
+                        <center>
+                        <asp:Button id="btnAddAnnouncement" runat="server" class="btn btn-lg btn-login" type="submit" Text="Add" OnClick="AddAnnouncementButton_Click"/> <br /><br />
                     </center>
+                    </div>
 
-                    <script>
-                        jQuery('.datetimepicker').datetimepicker();
-                    </script>
+                        <script>
+                            jQuery('.datetimepicker').datetimepicker();
+                        </script>
 
-
+                        </div>
+                    </section>
                 </div>
             </div>
-
+           
         </div>
-    </div>
-    <asp:SqlDataSource ID="AnnouncementDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" 
+    </div><br /><br />
+    <asp:SqlDataSource ID="AnnouncementDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>"
         DeleteCommand="UPDATE [tblAnnouncement] SET [intBoolIsActive] = 0 WHERE [intAnnouncementID] = @original_intAnnouncementID"
         OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblAnnouncement] WHERE [intBoolIsActive] = 1 " UpdateCommand="UPDATE [tblAnnouncement] SET [strAnnouncementName] = @strAnnouncementName, [strAnnouncementDetail] = @strAnnouncementDetail WHERE [intAnnouncementID] = @original_intAnnouncementID">
         <DeleteParameters>
@@ -60,18 +87,21 @@
     </asp:SqlDataSource>
     <asp:ListView ID="AnnouncementListView" runat="server" DataKeyNames="intAnnouncementID" DataSourceID="AnnouncementDataSource">
         <EditItemTemplate>
+    
+            
             <tr>
                 <td>
                     <asp:TextBox ID="strAnnouncementNameLabel" runat="server" Text='<%# Bind("strAnnouncementName") %>' />
                 </td>
                 <td>
-                    <asp:TextBox ID="strAnnouncementDetailLabel" runat="server" Text='<%# Bind("strAnnouncementDetail") %>' />
-                </td>   
+                    <asp:TextBox style="overflow-y:scroll; min-height:150px; max-height:100%; width:100%!important" TextMode="MultiLine" Rows="6"  ID="strAnnouncementDetailLabel" runat="server" Text='<%# Bind("strAnnouncementDetail") %>' />
+                </td>
                 <td>
                     <asp:Button ID="UpdateButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Update" Text="Update" />
-                    <asp:Button ID="CancelButton" runat="server" CssClass="btn btn-danger btn-sm" CommandName="Cancel" Text="Cancel" />              
+                    <asp:Button ID="CancelButton" runat="server" CssClass="btn btn-danger btn-sm" CommandName="Cancel" Text="Cancel" />
                 </td>
             </tr>
+   
         </EditItemTemplate>
         <EmptyDataTemplate>
             <div class="registration-bg">
@@ -99,7 +129,8 @@
                 </div>
             </div>
         </EmptyDataTemplate>
-        <ItemTemplate>
+        <ItemTemplate> 
+
             <tr style="">
                 <td>
                     <asp:Label ID="strAnnouncementNameLabel" runat="server" Text='<%# Eval("strAnnouncementName") %>' />
@@ -108,8 +139,8 @@
                     <asp:Label ID="strAnnouncementDetailLabel" runat="server" Text='<%# Eval("strAnnouncementDetail") %>' />
                 </td>
                 <td>
-                    <asp:Button ID="EditButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Edit" Text="Edit" />
-                    <asp:Button ID="DeleteButton" runat="server" CssClass="btn btn-danger btn-sm" CommandName="Delete" Text="Delete" /> 
+                    <asp:Button href="#myModal" ID="EditButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Edit" Text="Edit" />
+                    <asp:Button ID="DeleteButton" runat="server" CssClass="btn btn-danger btn-sm" CommandName="Delete" Text="Delete" />
                 </td>
             </tr>
         </ItemTemplate>
@@ -148,7 +179,7 @@
             </div>
             </center>
         </LayoutTemplate>
-        </asp:ListView>
-<!--container end-->
+    </asp:ListView>
+    <!--container end-->
 
 </asp:Content>
