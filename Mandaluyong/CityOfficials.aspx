@@ -3,13 +3,23 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+        <style>
+        .no-gutter [class*="col-"] {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    </style>
+
+            <div style="background-color:#f4efde; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+
     <div class="container" id="tourpackages-carousel">
 
         <div class="row">
             <div class="profile">
 
 
-                <h2 class="text-center wow fadeInRight" style="text-shadow: 2px 2px 4px #949090; color: #383838">City Officials</h2>
+                        <h1 style="font-family:georgia; font-size:6rem; letter-spacing: 0.05em; color:#1d1a19; text-align:center" >City Officials</h1><br />
 
                 <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
                 <br />
@@ -205,5 +215,5 @@
         </div>
         <!-- End container -->
     </div>
-
+</div>
 </asp:Content>
