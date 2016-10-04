@@ -108,6 +108,11 @@
     <Content Include="datetimepicker\jquery.datetimepicker.full.min.js" />
     <Content Include="datetimepicker\jquery.js" />
     <Content Include="Events.aspx" />
+    <Content Include="image\citylandscape1.jpg" />
+    <Content Include="image\historybanner.jpg" />
+    <Content Include="image\historybg.jpg" />
+    <Content Include="image\historybg2.jpg" />
+    <Content Include="image\historybg3.jpg" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\divider.png" />
     <Content Include="img\mandalogo.png" />
@@ -243,7 +248,6 @@
     <Folder Include="assets\" />
     <Folder Include="css\" />
     <Folder Include="fonts\" />
-    <Folder Include="image\" />
     <Folder Include="img\history\" />
     <Folder Include="img\mv\" />
     <Folder Include="js\" />

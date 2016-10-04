@@ -11,24 +11,19 @@
 
         </style>
   
-
+     <div id="banner">
+            <div id="wrapper" style="width: 100%; overflow: hidden;">
+                <div id="container" style="width: 100%; margin-right: auto;">
+                    <img style="width: 100%;" src="image/historybanner.jpg" alt="" />
+                </div>
+            </div>
+        </div>
 
     <!--breadcrumbs start-->
 <div style="background-image: url('image/bg4.jpg'); background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;">
-    <div class="breadcrumbs">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-4">
-            <h1>
-              Events
-            </h1>
-          </div>
-     
-        </div>
-      </div>
-    </div>
+    
     <!--breadcrumbs end-->
 
 
