@@ -104,6 +104,8 @@
       <DependentUpon>dbwebprog.mdf</DependentUpon>
     </Content>
     <Content Include="CityOfficials.aspx" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\form-basic.css" />
     <Content Include="datetimepicker\jquery.datetimepicker.css" />
     <Content Include="datetimepicker\jquery.datetimepicker.full.min.js" />
     <Content Include="datetimepicker\jquery.js" />
@@ -246,7 +248,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
-    <Folder Include="css\" />
     <Folder Include="fonts\" />
     <Folder Include="img\history\" />
     <Folder Include="img\mv\" />

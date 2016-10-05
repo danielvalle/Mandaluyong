@@ -16,52 +16,80 @@
     <!--container start-->
     <div class="registration-bg">
         <div class="container">
-            <div class="col-md-2"></div>
-            <div class="form-signin wow fadeInUp col-md-8">
-                <h2 class="form-signin-heading">Events</h2>
-                <div class="login-wrap">
-                    <p>Enter Event Information</p>
+            
+            <div class="wow fadeInUp">
+                <div class="col-lg-10 col-lg-offset-1"><br /><br />
+                   <section class="panel" style="background-color: #ffffff; border-style: double; border-color: #48cfad;">
+                        <header class="panel-heading" style="color: #ffffff">
+                            <center><h4>Event Information</h4></center>
+                        </header>
+                    <div class="panel-body"> <br />
 
-                    <div class="form-group">
-                        <asp:Label ID="strEventImage" runat="server" CssClass="control-label col-md-12 col-sm-12">Event Image: </asp:Label>
-                        &nbsp;
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                        <asp:Label font-size="24px" ID="strEventImage" runat="server" CssClass="control-label col-md-12 col-sm-12">Event Image: </asp:Label>
+
+                              <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+                      
                         <asp:FileUpload ID="EventImageFileUpload" CssClass="btn btn-login btn-sm" runat="server" /><br />
+                        </center>
                     </div>
 
 
-                    <div class="form-group">
-                        <asp:Label ID="strEventNameLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strEventNameTextBox">Event Name: </asp:Label><br />
-                        <div class="col-md-12 col-sm-12" style="text-align: center;">
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                        <asp:Label font-size="24px" ID="strEventNameLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strEventNameTextBox">Event Name: </asp:Label><br />
+
+                             <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                        <div class="col-md-12 col-sm-12" style="text-align: center;"><br />
                             <asp:TextBox ID="strEventNameTextBox" CssClass="form-control" runat="server" /><br />
                         </div>
+                        </center>
                     </div>
 
 
-                    <div class="form-group">
-                        <asp:Label ID="strEventDescLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strEventDescTextBox">Event Description: </asp:Label><br />
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                        <asp:Label font-size="24px" ID="strEventDescLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strEventDescTextBox">Event Description: </asp:Label><br />
                         <div class="col-md-12 col-sm-12">
+
+                             <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                            <br />
                             <asp:TextBox Style="overflow-y: scroll; min-height: 150px; max-height: 100%; max-width: 100%" ID="strEventDescTextBox" TextMode="MultiLine" Columns="70" Rows="5" CssClass="form-control" runat="server" /><br />
                         </div>
+                        </center>
                     </div>
 
 
 
-                    <div class="form-group">
-                        <asp:Label ID="lblEventStart" runat="server" CssClass="control-label col-md-12 col-sm-12">Start Date and Time: </asp:Label><br />
-                        <div class="col-md-12 col-sm-12">
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                        <asp:Label font-size="24px" ID="lblEventStart" runat="server" CssClass="control-label col-md-12 col-sm-12">Start Date and Time: </asp:Label><br />
 
-                            <asp:TextBox runat="server" ID="dtmEventStart" CssClass="datetimepicker form-control" type="text" />
+                         <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                        <div class="col-md-12 col-sm-12"><br />
+
+                            <asp:TextBox runat="server" ID="dtmEventStart" CssClass="datetimepicker form-control" type="text" /><br />
 
                         </div>
+                        </center>
                     </div>
 
-                    <div class="form-group">
-                        <asp:Label ID="lblEventEnd" runat="server" CssClass="control-label col-md-12 col-sm-12">End Date and Time: </asp:Label><br />
-                        <div class="col-md-12 col-sm-12">
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                        <asp:Label font-size="24px" ID="lblEventEnd" runat="server" CssClass="control-label col-md-12 col-sm-12">End Date and Time: </asp:Label><br />
 
-                            <asp:TextBox runat="server" ID="dtmEventEnd" CssClass="datetimepicker form-control" type="text" />
+                         <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                        <div class="col-md-12 col-sm-12"><br />
+
+                            <asp:TextBox runat="server" ID="dtmEventEnd" CssClass="datetimepicker form-control" type="text" /><br />
 
                         </div>
+                        </center>
                     </div>
 
                     <script>
@@ -71,16 +99,19 @@
 
                     <br />
                     <br />
+                  <div class="col-lg-10 col-lg-offset-1"><br /><br />
                     <center>
                         <asp:Button id="btnAddEvent" runat="server" class="btn btn-lg btn-login" type="submit" Text="Add" OnClick="AddEventButton_Click"/>
                     </center>
+                </div>
 
-
+                        </div>
+                    </section>
                 </div>
             </div>
-            <div class="col-md-2"></div>
+           
         </div>
-    </div>
+    </div><br /><br />
     <asp:SqlDataSource ID="EventsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" 
         DeleteCommand="UPDATE [tblEvent] SET [intBoolIsActive] = 0 WHERE [intEventID] = @original_intEventID" 
         OldValuesParameterFormatString="original_{0}" 
@@ -105,16 +136,16 @@
                     <asp:TextBox ID="strEventNameLabel" runat="server" Text='<%# Bind("strEventName") %>' />
                 </td>
                 <td>
-                    <asp:TextBox ID="strEventDetailsLabel" runat="server" Text='<%# Bind("strEventDetails") %>' />
+                    <asp:TextBox  style="overflow-y:scroll; min-height:150px; max-height:100%; width:100%!important" TextMode="MultiLine" Rows="6" ID="strEventDetailsLabel" runat="server" Text='<%# Bind("strEventDetails") %>' />
                 </td>
                 <td>
-                    <asp:TextBox ID="dtmEventStartLabel" runat="server" Text='<%# Bind("dtmEventStart") %>' />
+                    <asp:TextBox ID="dtmEventStartLabel"  runat="server" CssClass="datetimepicker form-control" Text='<%# Bind("dtmEventStart") %>' />
                 </td>
                 <td>
-                    <asp:TextBox ID="dtmEventEndLabel" runat="server" Text='<%# Bind("dtmEventEnd") %>' />
+                    <asp:TextBox ID="dtmEventEndLabel"  runat="server" CssClass="datetimepicker form-control" Text='<%# Bind("dtmEventEnd") %>' />
                 </td>
                 <td>
-                    <img ID="strEventImagePathLabel" runat="server" src='<%# Bind("strEventImagePath") %>' />
+                    <img ID="strEventImagePathLabel" runat="server" width="150" height="150" src='<%# Bind("strEventImagePath") %>' />
                 </td>
                 <td>
                     <asp:Button ID="UpdateButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Update" Text="Update" />
@@ -163,7 +194,7 @@
                     <asp:Label ID="dtmEventEndLabel" runat="server" Text='<%# Eval("dtmEventEnd") %>' />
                 </td>
                 <td>
-                    <img ID="strEventImagePathLabel" runat="server" src='<%# Eval("strEventImagePath") %>' />
+                    <img ID="strEventImagePathLabel" runat="server" width="150" height="150"  src='<%# Eval("strEventImagePath") %>' />
                 </td>
                 <td>
                     <asp:Button ID="EditButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Edit" Text="Edit" />
