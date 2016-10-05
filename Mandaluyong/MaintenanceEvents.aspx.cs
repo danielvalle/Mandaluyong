@@ -30,7 +30,7 @@ namespace Mandaluyong
             try
             {
                 da.InsertCommand = new SqlCommand("Insert INTO [tblEvent] (strEventName, strEventDetails, dtmEventStart, dtmEventEnd, strEventImagePath, intBoolIsActive) VALUES" +
-                                                "(@strEventName, @strEventDetails, @dtmEventStart, @dtmEventEnd, @strEventImagePath, 0)", con);
+                                                "(@strEventName, @strEventDetails, @dtmEventStart, @dtmEventEnd, @strEventImagePath, 1)", con);
 
                 da.InsertCommand.Parameters.Add("@strEventName", SqlDbType.NVarChar).Value = strEventNameTextBox.Text;
                 da.InsertCommand.Parameters.Add("@strEventDetails", SqlDbType.NVarChar).Value = strEventDescTextBox.Text;

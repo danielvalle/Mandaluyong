@@ -28,7 +28,7 @@ namespace Mandaluyong
 
                 SqlDataAdapter da = new SqlDataAdapter();
                 da.InsertCommand = new SqlCommand("Insert INTO tblAnnouncement(strAnnouncementName, strAnnouncementDetail, dtAnnouncementDate, intBoolIsActive) VALUES" +
-                                                "(@strAnnouncementName, @strAnnouncementDetail, @dtAnnouncementDate, 0)", con);
+                                                "(@strAnnouncementName, @strAnnouncementDetail, @dtAnnouncementDate, 1)", con);
 
                 da.InsertCommand.Parameters.Add("@strAnnouncementName", SqlDbType.NVarChar).Value = txtAnnouncementName.Text;
                 da.InsertCommand.Parameters.Add("@strAnnouncementDetail", SqlDbType.NVarChar).Value = txtAnnouncementDetail.Text;
