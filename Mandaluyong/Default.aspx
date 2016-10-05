@@ -5,76 +5,15 @@
 
 
     <!-- Sequence Modern Slider -->
-    <div id="da-slider" class="da-slider">
+           <div>
+        <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityName], [strCityLogo], [strCityBanner] FROM [tblCity]"></asp:SqlDataSource>
+        <asp:ListView ID="CityInformationListView" runat="server" DataSourceID="CityInformationDataSource">
+            <ItemTemplate>
+                <img class="img img-responsive" style="width:100%" src='<%# Eval("strCityBanner") %>' alt="" style="text-align: center" />
+            </ItemTemplate>
+        </asp:ListView>
 
-        <div class="da-slide">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 style="padding-top: 8%">
-                            <i>MANDALUYONG IS A CITY</i>
-                            <br>
-                            <i>THAT LIES AT THE HEART</i>
-                            <br>
-                            <i>OF METROPOLITAN MANILA</i>
-                        </h2>
-
-
-                        <div class="da-img">
-                            <img src="img/p1.png" class="img-responsive" style="height: 300px" alt="image01" />
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
-
-        <div class="da-slide">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 style="padding-top: 8%">
-                            <i>MANDALUYONG CITY HAS</i>
-                            <br />
-                            <i>LOTS OF STORIES</i>
-                            <br />
-                            <i>TO TELL.</i>
-                        </h2>
-
-                        <div class="da-img">
-                            <img src="img/p2.png" class="img-responsive" alt="image01" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="da-slide">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12" text-center>
-                        <h2 style="padding-top: 8%">
-                            <i>MANDALUYONG HAS ITS OWN</i>
-                            </br>
-          <i>SHARE OF COMMERCIAL STRIPS</i>
-                            </br>
-          <i>AND A CENTRAL BUSINESS</i>
-                        </h2>
-
-                        <div class="da-img">
-                            <img src="img/p3.png" class="img-responsive" alt="image01" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <nav class="da-arrows">
-            <span class="da-arrows-prev"></span>
-            <span class="da-arrows-next"></span>
-        </nav>
-    </div>
 
     <!-- Sequence Modern Slider -->
 
@@ -137,15 +76,7 @@
 
         </div>
 
-            <div>
-        <asp:SqlDataSource ID="CityInformationDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT [strCityName], [strCityLogo], [strCityBanner] FROM [tblCity]"></asp:SqlDataSource>
-        <asp:ListView ID="CityInformationListView" runat="server" DataSourceID="CityInformationDataSource">
-            <ItemTemplate>
-                <img class="img img-responsive" src='<%# Eval("strCityBanner") %>' alt="" style="text-align: center" />
-            </ItemTemplate>
-        </asp:ListView>
-
-    </div>
+     
 
     </div>
 

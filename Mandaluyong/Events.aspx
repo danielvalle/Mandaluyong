@@ -8,16 +8,27 @@
         padding-right: 0 !important;
       }
 
+        p{
+            
+            text-align:justify;
+            line-height: 100%;
+           
+        
+        }
+          .transparent{
+            background-color: rgba(77, 77, 77, 0.5);
+             padding-left: 5%;
+            padding-right:5%;
+            
+          
+           
+        }
+
+         
 
         </style>
   
-     <div id="banner">
-            <div id="wrapper" style="width: 100%; overflow: hidden;">
-                <div id="container" style="width: 100%; margin-right: auto;">
-                    <img style="width: 100%;" src="image/historybanner.jpg" alt="" />
-                </div>
-            </div>
-        </div>
+    
 
     <!--breadcrumbs start-->
 <div style="background-image: url('image/bg4.jpg'); background-repeat: no-repeat;
@@ -30,21 +41,33 @@
     <asp:SqlDataSource ID="EventsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT * FROM [tblEvent] WHERE intBoolIsActive = 1"></asp:SqlDataSource>
     <!--container start-->
     <asp:ListView ID="EventsListView" runat="server" DataSourceID="EventsDataSource">
-        <ItemTemplate>
-            <div class="container">
-                <div class="row no-gutter" style="background-color:rgba(51,51,51,0.4);" >
-                    <div class="col-md-12" style="margin:auto" >
-                        <img class="img-responsive" src='<%# Eval("strEventImagePath") %>'
-                    </div>
-                    <div class="col-md-12" style="padding:2%!important;"  >
-                        <center><h2 style="font-family:georgia; font-size:30px; color:white;" ><%# Eval("strEventName") %></h2><br>
-                        <p style="text-align: justify; font-family:georgia; font-size:18px; color:#cccccc;text-indent: 50px;"><%# Eval("strEventDetails") %></p>
-					    </center>
+        <ItemTemplate><br /><br />
+          
+
+            <div class="col-xs-12 wow fadeInDown" style="padding-left:15%; padding-right:15%"  >
+                    <div class="panel panel-default text-center" style="background-color: rgba(64, 64, 64,  0.6)!important;">
+
+                        <div class="panel-heading" style="vertical-align: middle; background-color: rgba(16, 13, 19, 0.4)!important;" >
+                             <center><img class="img-responsive" src='<%# Eval("strEventImagePath") %>'</center><br />
+						 
+                       <div class="panel-body text-center" style="color:#f9f9f9; font-family:georgia; font-size:24px!important; background-color: rgba(250, 250, 250, 0.4)!important;"><b><%# Eval("strEventName") %></b></div><br>
+                       
+                        </div>
+                        <div class="panel-footer text-center" style="background-color: #c1c1c1; color:black!important;">
+
+                            <p style="font-family:georgia; font-size:18px;  text-indent: 50px;   text-align:justify; line-height: 150%;"><%# Eval("strEventDetails") %></p>
+                            <br />
+                          
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            </div>
-            <br />
+
+             <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/div.png" />
+
+               
+           
+        
         </ItemTemplate>
     </asp:ListView>
 
