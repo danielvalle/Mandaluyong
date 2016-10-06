@@ -13,13 +13,6 @@
 
         </style>
 
-     <div id="banner">
-            <div id="wrapper" style="width: 100%; overflow: hidden;">
-                <div id="container" style="width: 100%; margin-right: auto;">
-                    <img style="width: 100%;" src="image/historybanner.jpg" alt="" />
-                </div>
-            </div>
-        </div>
 
     <!--breadcrumbs start-->
 <div style="background-image: url('image/bg1.jpg'); background-repeat: no-repeat;
@@ -30,61 +23,36 @@
     <asp:ListView ID="AnnouncementListView" runat="server" DataSourceID="AnnouncementDataSource">
         <ItemTemplate>
             <!--container start-->
-        <div class="container">
-          <div class="row">
-            <!--blog start-->
-            <div class="col-lg-11">
-              <div class="blog-item">
-                <div class="row">
-                  <div class="col-lg-2 col-sm-2">
-                    <!--<div class="date-wrap">
-                      <span class="date">
-                        21
-                      </span>
-                      <span class="month">
-                        September
-                      </span>
-                    </div>-->
-
-                  </div>
-                  <div class="col-lg-10 col-sm-10">
-                    <div class="blog-img gs">
-                      <img src="" alt=""/>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="row">
+       <div class="container wow fadeInDown">
+                <div class="row"><br /><br />
 			
-			    <!-- for extra spaces-->
-                  <div class="col-lg-2 col-sm-2 ">
-                  </div>
-			    <!-- for extra spaces-->
 			
-						      <div class="col-lg-10 col-sm-10">
+						      <div class="col-lg-10 col-lg-offset-1">
 						  
-							    <div class="container">
+							    
 								    <div class="row no-gutter" style="background-color:rgba(51,51,51,0.7);" >
 						  
-									    <div  style="padding:4%!important;"  >
+									    <div  style="padding:4%!important; border-style: double; border-color: white"  >
 										    <center>
-                                                <h2 style="font-family:georgia; font-size:35px; color:white;" ><%# Eval("strAnnouncementName") %></h2><br />
-										        <p style="text-align: justify; font-family:georgia; font-size:18px; color:  #d9d9d9; text-indent: 50px;">
+                                                <h2 style="font-family:georgia; font-size:35px; color:white;"  ><%# Eval("strAnnouncementName") %></h2><br />
+										        <p style="text-align: justify; font-family:georgia; font-size:18px; color:#d9d9d9; text-indent: 50px; line-height: 150%">
                                                     <%# Eval("strAnnouncementDetail")%>
 										        </p>
                                             </center>
 									    </div>
 								    </div>
 							    </div>
+
+                 
 		
 	
 
 						    </div>
-					    </div>
-				    </div>
-			    </div>
-		    </div>
-        </div>
+
+              
+					    </div><br /> <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/div.png" />
+            <br />
+			
         <!--container end-->
         </ItemTemplate>
 

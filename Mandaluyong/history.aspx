@@ -41,12 +41,14 @@
                         <br /><br />
                         <h1 style="font-family:georgia; font-size:6rem; letter-spacing: 0.05em; color:#1d1a19; text-align:center" >History</h1><br />
 
-                        <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
-                        <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19" >
+                        <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /><br />
+                        <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19; text-indent: 50px;   text-align:justify; line-height: 150%;" >
                             <asp:Label ID="strCityHistoryPreview" runat="server" Text='<%# Bind("strCityHistory") %>' />
                         </p>
 
-                        <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut faucibus lacus, rhoncus sollicitudin dolor. Vestibulum bibendum neque turpis, at scelerisque ante rutrum quis. Cras hendrerit lectus at dictum tincidunt. Proin ipsum eros, consectetur vitae semper ut, porta dapibus justo. Ut dictum, felis eget molestie luctus, sapien mi consequat erat, ut volutpat mi nisl efficitur sapien. Cras sagittis sagittis ex, eget placerat magna placerat nec. Nam vitae placerat nulla, in scelerisque justo. Mauris quis quam felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br />
+<<<<<<< HEAD
+                        <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19; text-indent: 50px;   text-align:justify;
+            line-height: 150%;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut faucibus lacus, rhoncus sollicitudin dolor. Vestibulum bibendum neque turpis, at scelerisque ante rutrum quis. Cras hendrerit lectus at dictum tincidunt. Proin ipsum eros, consectetur vitae semper ut, porta dapibus justo. Ut dictum, felis eget molestie luctus, sapien mi consequat erat, ut volutpat mi nisl efficitur sapien. Cras sagittis sagittis ex, eget placerat magna placerat nec. Nam vitae placerat nulla, in scelerisque justo. Mauris quis quam felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br />
 
                         <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19" >Fusce ut magna porta, posuere magna ac, ornare elit. Nunc vehicula pretium pellentesque. Suspendisse ut purus in metus gravida rhoncus. Vivamus eu sem mi. Nunc a tristique nunc, quis dictum ante. Etiam ac nisl libero. Phasellus ac neque libero. Nulla sit amet maximus neque. Praesent ac velit placerat, eleifend mi nec, ornare turpis. Suspendisse dui ex, varius id mauris quis, aliquet egestas nisi.</p><br />
 
@@ -56,6 +58,8 @@
 
                         <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19" >Quisque ac mattis leo. Quisque bibendum tempus mi, et cursus ex porttitor at. Morbi eu turpis aliquet, tincidunt ligula id, volutpat lacus. Integer et libero eu erat laoreet gravida in eu purus. Nulla tincidunt augue sem, ac hendrerit purus ultricies ut. Phasellus eget sollicitudin lectus. Duis finibus ex a egestas tincidunt. Curabitur cursus nec metus ac porttitor. Suspendisse sed magna sed diam hendrerit mattis. Sed sed nisl justo. Integer porttitor sem quis urna maximus, vel scelerisque felis tempor. Fusce nec orci ac dui consequat varius. Mauris ornare est ac leo placerat condimentum.</p><br />
 
+=======
+>>>>>>> 499d0c7420c7fa5a515eb8dec88c35c5bec956a7
                         <br />
                     </ItemTemplate>
                 </asp:FormView>
