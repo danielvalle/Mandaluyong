@@ -36,7 +36,7 @@
                     <br />
                     <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
                     <br />
-                    <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19" >
+                    <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19;text-indent: 50px;   text-align:justify; line-height: 150%;" >
                         <asp:Label ID="strCityMissionLabel" runat="server" Text='<%# Bind("strCityMission") %>' /></p>
                 </div>
 
@@ -50,7 +50,7 @@
                     <br />
                     <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
                     <br />
-                    <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19" >
+                    <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19; text-indent: 50px;   text-align:justify; line-height: 150%;" >
                         <asp:Label ID="strCityVisionLabel" runat="server" Text='<%# Bind("strCityVision") %>' /></p>
 
                 </div>

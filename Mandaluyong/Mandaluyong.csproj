@@ -116,6 +116,7 @@
     <Content Include="image\historybg2.jpg" />
     <Content Include="image\historybg3.jpg" />
     <Content Include="img\bg.jpg" />
+    <Content Include="img\div.png" />
     <Content Include="img\divider.png" />
     <Content Include="img\mandalogo.png" />
     <Content Include="MaintenanceAnnouncement.aspx" />
