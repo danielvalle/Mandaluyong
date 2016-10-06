@@ -23,191 +23,42 @@
 
                 <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
                 <br />
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail wow fadeInUp" data-wow-delay=".1s">
-                        <img src="img/team/member1.jpg" alt=""/>
-                        <div class="caption">
-                            <h4 style="color: #48cfad">FirstName MiddleName LastName</h4>
-                            <h4>Official's Position</h4>
-                            <p>Add brief description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.</p>
-                            <div class="team-social-link">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-github"></i>
-                                </a>
+                <asp:SqlDataSource ID="CityOfficialsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT a.*, b.* from tblOfficial a JOIN tblPosition b ON a.intPositionIDFK = b.intPositionID"></asp:SqlDataSource>
+                <asp:ListView ID="CityOfficialsListView" runat="server" DataSourceID="CityOfficialsDataSource">
+                    <ItemTemplate>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail wow fadeInUp" data-wow-delay=".1s">
+                                <img src="img/team/member1.jpg" alt=""/>
+                                <div class="caption">
+                                    <h4 style="color: #48cfad"><%# Eval("strOfficialFirstName") %> <%# Eval("strOfficialMiddleName") %> <%# Eval("strOfficialLastName") %></h4>
+                                    <h4><%# Eval("strPositionName") %></h4>
+                                    <p>Add brief description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.</p>
+                                    <div class="team-social-link">
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </ItemTemplate>
+                </asp:ListView>
 
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail wow fadeInUp" data-wow-delay=".3s">
-                        <img src="img/team/member2.jpg" alt=""/>
-                        <div class="caption">
-                            <h4 style="color: #48cfad">FirstName MiddleName LastName</h4>
-                            <h4>Official's Position</h4>
-                            <p>Add brief description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.</p>
-                            <div class="team-social-link">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail wow fadeInUp" data-wow-delay=".5s">
-                        <img src="img/team/member3.jpg" alt=""/>
-                        <div class="caption">
-                            <h4 style="color: #48cfad">FirstName MiddleName LastName</h4>
-                            <h4>Official's Position</h4>
-                            <p>Add brief description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.</p>
-                            <div class="team-social-link">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail wow fadeInUp" data-wow-delay=".7s">
-                        <img src="img/team/member4.jpg" alt=""/>
-                        <div class="caption">
-                            <h4 style="color: #48cfad">FirstName MiddleName LastName</h4>
-                            <h4>Official's Position</h4>
-                            <p>Add brief description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.</p>
-                            <div class="team-social-link">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail wow fadeInUp" data-wow-delay=".7s">
-                        <img src="img/team/member1.jpg" alt=""/>
-                        <div class="caption">
-                            <h4 style="color: #48cfad">FirstName MiddleName LastName</h4>
-                            <h4>Official's Position</h4>
-                            <p>Add brief description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.</p>
-                            <div class="team-social-link">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail wow fadeInUp" data-wow-delay=".7s">
-                        <img src="img/team/member2.jpg" alt=""/>
-                        <div class="caption">
-                            <h4 style="color: #48cfad">FirstName MiddleName LastName</h4>
-                            <h4>Official's Position</h4>
-                            <p>Add brief description here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.</p>
-                            <div class="team-social-link">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <!-- End row -->
