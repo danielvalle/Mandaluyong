@@ -125,6 +125,9 @@
                                         <a href="MaintenanceCityOfficial.aspx" runat="server">Officials</a>
                                     </li>
                                     <li>
+                                        <a href="MaintenancePosition.aspx" runat="server">Official's Position</a>
+                                    </li>
+                                    <li>
                                         <a href="admember.aspx" runat="server">Members</a>
                                     </li>
                                 </ul>

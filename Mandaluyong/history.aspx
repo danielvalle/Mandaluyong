@@ -31,6 +31,7 @@
 
           
 
+                                    <h1 style="font-family:georgia; font-size:6rem; letter-spacing: 0.05em; color:#1d1a19; text-align:center" >History</h1><br />
 
 
 
@@ -39,7 +40,6 @@
                     <ItemTemplate>
 
                         <br /><br />
-                        <h1 style="font-family:georgia; font-size:6rem; letter-spacing: 0.05em; color:#1d1a19; text-align:center" >History</h1><br />
 
                         <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />
                         <p style="font-family:georgia; font-size:2rem; letter-spacing: 0.05em; color:#1d1a19" >
