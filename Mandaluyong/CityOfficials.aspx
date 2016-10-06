@@ -14,7 +14,7 @@
             <div style="background-color:#f4efde; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
 
     <div class="container" id="tourpackages-carousel">
-
+        <div class="col-lg-4"></div>
         <div class="row">
             <div class="profile">
 

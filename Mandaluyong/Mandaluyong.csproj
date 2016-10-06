@@ -120,6 +120,7 @@
     <Content Include="img\divider.png" />
     <Content Include="img\mandalogo.png" />
     <Content Include="MaintenanceAnnouncement.aspx" />
+    <Content Include="MaintenancePosition.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -216,6 +217,13 @@
     </Compile>
     <Compile Include="History.aspx.designer.cs">
       <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenancePosition.aspx.cs">
+      <DependentUpon>MaintenancePosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintenancePosition.aspx.designer.cs">
+      <DependentUpon>MaintenancePosition.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

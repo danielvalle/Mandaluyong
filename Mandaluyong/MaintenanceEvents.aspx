@@ -155,7 +155,7 @@
                     <asp:TextBox ID="dtmEventEndLabel"  runat="server" CssClass="datetimepicker form-control" Text='<%# Bind("dtmEventEnd") %>' />
                 </td>
                 <td>
-                    <img ID="strEventImagePathLabel" runat="server" width="150" height="150" src='<%# Bind("strEventImagePath") %>' />
+                    <img id="strEventImagePathLabel" runat="server"  style="width:150px; height:150px" src='<%# Bind("strEventImagePath") %>' />
                 </td>
                 <td>
                     <asp:Button ID="UpdateButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Update" Text="Update" />

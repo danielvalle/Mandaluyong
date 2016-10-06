@@ -85,24 +85,6 @@ namespace Mandaluyong {
         protected global::System.Web.UI.WebControls.Label strOfficialPosition;
         
         /// <summary>
-        /// OfficialPositionsDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource OfficialPositionsDataSource;
-        
-        /// <summary>
-        /// OfficialPositionsDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList OfficialPositionsDropDownList;
-        
-        /// <summary>
         /// strOfficialDescLabel control.
         /// </summary>
         /// <remarks>

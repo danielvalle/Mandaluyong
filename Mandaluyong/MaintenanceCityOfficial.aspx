@@ -5,33 +5,47 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <h1>Maintenance - City Officials</h1>
+
+    <style>
+        .no-gutter [class*="col-"] {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    </style>
+
+    <div style="background-image: url('image/citylandscape1.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h1>Maintenance - City Officials</h1>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!--container start-->
+        <!--container start-->
 
-    <div class="registration-bg">
         <div class="container">
-            
             <div class="wow fadeInUp">
-                <div class="col-lg-10 col-lg-offset-1"><br /><br />
-                     <section class="panel" style="background-color: #ffffff; border-style: double; border-color: #48cfad;">
-                         <header class="panel-heading" style="color: #ffffff">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <br />
+                    <br />
+                    <section class="panel" style="background-color: #ffffff; border-style: double; border-color: #48cfad;">
+                        <header class="panel-heading" style="color: #ffffff">
                             <center><h4>City Official</h4></center>
                         </header>
-                <div class="panel-body"><br />
-                  
-                <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
-                    <center>
-                     <asp:Label font-size="24px" ID="strCityLogoLabel" runat="server" CssClass="control-label col-md-12 col-sm-12">Official's Photo </asp:Label><br />
+                        <div class="panel-body">
+
+
+                            <br />
+
+                            <div class="col-lg-10 col-lg-offset-1">
+                                <center>
+                     <asp:Label font-size="24px" ID="strCityLogoLabel" runat="server" CssClass="control-label col-md-12 col-sm-12 center">Official's Photo </asp:Label><br />
 
                         <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
 
@@ -40,79 +54,73 @@
                     <asp:Button Text="Upload Image" CssClass="btn btn-success" runat="server" />
                     <asp:FileUpload CssClass="btn btn-login btn-sm" runat="server" /><br />
                 </center>
-                </div>
+                            </div>
 
 
-                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
-                        <center><br />
-                        <asp:Label font-size="24px" ID="strOfficialFNameLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strOfficialFNameTextBox">First Name: </asp:Label><br />
 
-                        <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
+                            <br />
+                            <br />
+                            <br />
 
-                        <div class="col-md-12 col-sm-12" style="text-align: center;"><br />
-                            <asp:TextBox ID="strOfficialFNameTextBox" CssClass="form-control" runat="server" /><br />
-                        </div>
-                        </center>
-                    </div>
+                            <div class="form-group">
+                                <asp:Label Font-Size="20px" ID="strOfficialFNameLabel" runat="server" CssClass="control-label col-md-4 col-sm-12 text-center" AssociatedControlID="strOfficialFNameTextBox">First Name: </asp:Label>
+                                <div class="col-md-8 col-sm-12" style="text-align: center;">
+                                    <asp:TextBox ID="strOfficialFNameTextBox" CssClass="form-control" runat="server" /><br />
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <asp:Label Font-Size="20px" ID="strOfficiaMNameLabel" runat="server" CssClass="control-label col-md-4 col-sm-12 text-center" AssociatedControlID="strOfficiaMNameTextBox">Middle Name: </asp:Label>
+                                <div class="col-md-8 col-sm-12" style="text-align: center;">
+                                    <asp:TextBox ID="strOfficiaMNameTextBox" CssClass="form-control" runat="server" /><br />
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">                               
+                                <asp:Label  font-size="20px" ID="strOfficiaLNameLabel" runat="server" CssClass="control-label col-md-4 col-sm-12 text-center" AssociatedControlID="strOfficialLNameTextBox">Last Name: </asp:Label>
+                                <div class="col-md-8 col-sm-12" style="text-align: center;">
+                                    <asp:TextBox ID="strOfficialLNameTextBox" CssClass="form-control" runat="server" /><br />
+                                </div>                      
+                            </div>
+                            
+                            <div class="form-group">                           
+                                <asp:Label font-size="20px" ID="strOfficialPosition" runat="server" CssClass="control-label col-md-4 col-sm-12 text-center" AssociatedControlID="strOfficialLNameTextBox">Position: </asp:Label>
+                                <div class="input-group margin">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="fa fa-caret-down"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                    </div><!-- /input-group -->
+                            </div>
+                            <!-- /btn-group -->
 
-                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
-                        <center><br />
-                        <asp:Label font-size="24px" ID="strOfficiaMNameLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strOfficiaMNameTextBox">Middle Name: </asp:Label><br />
-
-                        <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" />  
-
-                        <div class="col-md-12 col-sm-12" style="text-align: center;"><br />
-                            <asp:TextBox ID="strOfficiaMNameTextBox" CssClass="form-control" runat="server" /><br />
-                        </div>
-                        </center>
-                    </div>
-
-                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
-                        <center><br />
-                        <asp:Label  font-size="24px" ID="strOfficiaLNameLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strOfficialLNameTextBox">Last Name: </asp:Label><br />
-
-                        <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
-
-                        <div class="col-md-12 col-sm-12" style="text-align: center;"><br />
-                            <asp:TextBox ID="strOfficialLNameTextBox" CssClass="form-control" runat="server" /><br />
-                        </div>
-                        </center>
-                    </div>
-
-                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
-                        <center><br />
-                        <asp:Label font-size="24px" ID="strOfficialPosition" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strOfficialLNameTextBox">Position: </asp:Label><br />
-
-                        <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
-
-                        <asp:SqlDataSource ID="OfficialPositionsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT * FROM [tblPosition]"></asp:SqlDataSource>
-
-                        <asp:DropDownList ID="OfficialPositionsDropDownList" runat="server" DataSourceID="OfficialPositionsDataSource" DataTextField="strPositionName" DataValueField="intPositionID">
-                        </asp:DropDownList>
-                        </center><br />
-                    </div>
-                    <!-- /btn-group -->
-
-                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
-                        <center><br />
-                        <asp:Label font-size="24px" ID="strOfficialDescLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strOfficialDescTextBox">Description: </asp:Label><br />
+                            <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;">
+                                <center><br />
+                        <asp:Label font-size="20px" ID="strOfficialDescLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strOfficialDescTextBox">Description: </asp:Label><br />
 
                         <img class="img img-responsive wow fadeInRight" style="width: 30%; margin: auto" src="img/divider.png" /> 
 
                         <asp:TextBox ID="strOfficialDescTextBox" Style="overflow-y: scroll; min-height: 150px; max-height: 100%; max-width: 100%" runat="server" TextMode="MultiLine" CssClass="form-control" ></asp:TextBox>
-                        </center><br />
-                    </div>
-                    <br />
-                    <br />
+                        </center>
+                                <br />
+                            </div>
+                            <br />
+                            <br />
 
-                     <div class="col-lg-10 col-lg-offset-1"><br /><br />
-                        <center>
+                            <div class="col-lg-10 col-lg-offset-1">
+                                <br />
+                                <br />
+                                <center>
                         <asp:Button runat="server" class="btn btn-lg btn-login" Text="Add" /> <br /><br />
                     </center>
-                    </div>
+                            </div>
 
 
-                    <!-- ALISIN KO MUNA YUNG MODAL NA GAWA NI ZYLAH
+                            <!-- ALISIN KO MUNA YUNG MODAL NA GAWA NI ZYLAH
                     <center>
                         <a href="#myModal2" data-toggle="modal" class="btn btn-lg btn-login" type="submit">Save</a>
                         <button class="btn btn-lg btn-login" type="submit">Delete</button>
@@ -123,8 +131,10 @@
                         </div>
                     </section>
                 </div>
-            </div><br /><br />
-          
+            </div>
+            <br />
+            <br />
+
 
 
 
@@ -151,10 +161,11 @@
             <!-- modal -->
 
         </div>
-    </div><br /><br />
-    <!--container end-->
+        <br />
+        <br />
+        <!--container end-->
 
-    <div class="registration-bg">
+
         <div class="container">
 
             <div class="bs-example mar-b-30 wow fadeInUp">
