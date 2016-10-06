@@ -114,21 +114,18 @@
     </div>
     <!--property end-->
 
-    <!--announcements and officials-->
+  <!--announcements and officials-->
 
-    <div class="container">
+     <div class="container">
 
-        <div class="row mar-b-60">
-            <div class="col-lg-6">
+        <div class="">
+            <div class="">
                 <!--tab start-->
                 <section class="tab wow fadeInLeft">
                     <header class="panel-heading tab-bg-dark-navy-blue">
                         <ul class="nav nav-tabs nav-justified ">
+                           
                             <li class="active">
-                                <a data-toggle="tab" href="#news">News
-                                </a>
-                            </li>
-                            <li>
                                 <a data-toggle="tab" href="#events">Events
                                 </a>
                             </li>
@@ -140,32 +137,19 @@
                     </header>
                     <div class="panel-body">
                         <div class="tab-content tasi-tab">
-                            <div id="news" class="tab-pane fade in active">
-                                <article class="media">
+                            <div id="events"  class="tab-pane fade in active">
+                                <article class="media" >
                                     <a class="pull-left thumb p-thumb">
-                                        <img src="img/product1.jpg" alt="">
+                                        <!--image goes here-->
                                     </a>
                                     <div class="media-body b-btm">
-                                        <a href="#" class=" p-head">MANDALUYONG INTENSIFIES CAMPAIGN AGAINST ILLEGAL DRUGS
+                                        <a href="#" class="cmt-head">There is no event as of the moment.
                                         </a>
-                                        <p>
-                                            Mandaluyong City Mayor Carmelita Abalos intensifies campaign against illegal...
-                                        </p>
+
                                     </div>
                                 </article>
-                                <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <img src="img/product2.jpg" alt="">
-                                    </a>
-                                    <div class="media-body b-btm">
-                                        <a href="#" class=" p-head">CHILD-FRIENDLY SPACE AT MANPOWER.
-                                        </a>
-                                        <p>
-                                            Mandaluyong City Mayor Menchie Abalos poses with Mandaluyong Manpower...
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="media">
+
+                                  <article class="media">
                                     <a class="pull-left thumb p-thumb">
                                         <img src="img/product1.jpg" alt="">
                                     </a>
@@ -177,23 +161,26 @@
                                         </p>
                                     </div>
                                 </article>
-                            </div>
-                            <div id="events" class="tab-pane fade">
-                                <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <!--image goes here-->
-                                    </a>
-                                    <div class="media-body b-btm">
-                                        <a href="#" class="cmt-head">There is no event as of the moment.
-                                        </a>
 
-                                    </div>
-                                </article>
+                                <div class="pull-right" >
+                                <a style="color:#48cfad!important" href="Events.aspx"><h4>Click here for more information...</h4></a>
+                                </div>
                             </div>
+
                             <div id="notice-board" class="tab-pane fade">
-                                <p>
-                                    Please be informed that the only official Facebook account of Mayor Menchie Abalos is the Menchie Abalos Official facebook page. Other accounts and pages are not in any way connected officially or unofficially to the Mayor. Thank you very much!
-                                </p>
+
+                                    <div class="media-body b-btm">
+                                        <a href="#" class=" p-head">MAYOR'S FACEBOOK
+                                        </a>
+                                        <p>
+                                             Please be informed that the only official Facebook account of Mayor Menchie Abalos is the Menchie Abalos Official facebook page. Other accounts and pages are not in any way connected officially or unofficially to the Mayor. Thank you very much!
+                                        </p>
+                                    </div>
+
+                                <div class="pull-right" >
+                                <a style="color:#48cfad!important" href="Announcement.aspx"><h4>Click here for more information...</h4></a>
+                                </div>
+
 
                             </div>
                         </div>
@@ -201,76 +188,9 @@
                 </section>
                 <!--tab end-->
             </div>
-            <div class="col-lg-6">
-                <!--testimonial start-->
-                <div class="about-testimonial boxed-style about-flexslider ">
-                    <section class="slider wow fadeInRight">
-                        <div class="flexslider">
-                            <ul class="slides about-flex-slides">
-                                <li>
-                                    <div class="about-testimonial-image ">
-                                        <img alt="" src="img/of1.jpg">
-                                    </div>
-                                    <a class="about-testimonial-author" href="#">ERNESTO E. VICTORINO
-                                    </a>
-                                    <span class="about-testimonial-company">City Administrator
-                                    </span>
-                                    <div class="about-testimonial-content">
-                                        <p class="about-testimonial-quote">
-                                            He recommends to the Sangguniang Panlungsod and advises the City Mayor on all matters relative to the management and administration of the City.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="about-testimonial-image ">
-                                        <img alt="" src="img/of2.jpg">
-                                    </div>
-                                    <a class="about-testimonial-author" href="#">FLORDELIZA D. BONADOR
-                                    </a>
-                                    <span class="about-testimonial-company">Human Resource Management Officer
-                                    </span>
-                                    <div class="about-testimonial-content">
-                                        <p class="about-testimonial-quote">
-                                            She formulates plans and programs related to human resource recruitment, selection, training development, and in the monitoring and evaluation of performance.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="about-testimonial-image ">
-                                        <img alt="" src="img/of3.jpg">
-                                    </div>
-                                    <a class="about-testimonial-author" href="#">CATHERINE DE LEON-ARCE
-                                    </a>
-                                    <span class="about-testimonial-company">Business Permits and Licensing Officer
-                                    </span>
-                                    <div class="about-testimonial-content">
-                                        <p class="about-testimonial-quote">
-                                            She is authorized to issue permits and licenses related to business operations and closures of delinquent establishments.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="about-testimonial-image ">
-                                        <img alt="" src="img/of4.jpg">
-                                    </div>
-                                    <a class="about-testimonial-author" href="#">VOLTAIRE G. SAN PEDRO
-                                    </a>
-                                    <span class="about-testimonial-company">City Legal Officer
-                                    </span>
-                                    <div class="about-testimonial-content">
-                                        <p class="about-testimonial-quote">
-                                            He formulates measures for the consideration of the Sangguniang Panlungsod and provides legal assistance and support to the City Mayor in carrying out the delivery of basic services and provisions of adequate facilities.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-                <!--testimonial end-->
-            </div>
+        
         </div>
-    </div>
+    </div> <br /><br />
     <!--announcements and officials-->
 
     <!--recent work start-->
@@ -286,49 +206,37 @@
                         <div class="item view view-tenth">
                             <img src="img/l1.jpg" alt="work Image">
                             <div class="mask">
-                                <a href="#" class="info" data-toggle="tooltip" data-placement="top" title="Details">
-                                    <i class="fa fa-link"></i>
-                                </a>
+                               
                             </div>
                         </div>
                         <div class="item view view-tenth">
                             <img src="img/l2.jpg" alt="work Image">
                             <div class="mask">
-                                <a href="#" class="info" data-toggle="tooltip" data-placement="top" title="Details">
-                                    <i class="fa fa-link"></i>
-                                </a>
+                               
                             </div>
                         </div>
                         <div class="item view view-tenth">
                             <img src="img/l6.jpg" alt="work Image">
                             <div class="mask">
-                                <a href="#" class="info" data-toggle="tooltip" data-placement="top" title="Details">
-                                    <i class="fa fa-link"></i>
-                                </a>
+                                
                             </div>
                         </div>
                         <div class="item view view-tenth">
                             <img src="img/l3.jpg" alt="work Image">
                             <div class="mask">
-                                <a href="#" class="info" data-toggle="tooltip" data-placement="top" title="Details">
-                                    <i class="fa fa-link"></i>
-                                </a>
+                              
                             </div>
                         </div>
                         <div class="item view view-tenth">
                             <img src="img/l4.jpg" alt="work Image">
                             <div class="mask">
-                                <a href="#" class="info" data-toggle="tooltip" data-placement="top" title="Details">
-                                    <i class="fa fa-link"></i>
-                                </a>
+                                
                             </div>
                         </div>
                         <div class="item view view-tenth">
                             <img src="img/l5.jpg" alt="work Image">
                             <div class="mask">
-                                <a href="#" class="info" data-toggle="tooltip" data-placement="top" title="Details">
-                                    <i class="fa fa-link"></i>
-                                </a>
+                                
                             </div>
                         </div>
 

@@ -17,7 +17,7 @@
             <div id="banner">
             <div id="wrapper" style="width: 100%; overflow: hidden;">
                 <div id="container" style="width: 100%; margin-right: auto;">
-                    <img style="width: 100%;" src="image/historybanner.jpg" alt="" />
+                    <img style="width: 100%;" src="img/b2.jpg" alt="" />
                 </div>
             </div>
         </div>
