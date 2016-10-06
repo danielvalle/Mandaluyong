@@ -92,7 +92,7 @@
         <br />
         <asp:SqlDataSource ID="AnnouncementDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>"
             DeleteCommand="UPDATE [tblAnnouncement] SET [intBoolIsActive] = 0 WHERE [intAnnouncementID] = @original_intAnnouncementID"
-            OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblAnnouncement] WHERE [intBoolIsActive] = 1 " UpdateCommand="UPDATE [tblAnnouncement] SET [strAnnouncementName] = @strAnnouncementName, [strAnnouncementDetail] = @strAnnouncementDetail WHERE [intAnnouncementID] = @original_intAnnouncementID">
+            OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblAnnouncement] WHERE [intBoolIsActive] = 1 AND DATEDIFF(dd, [dtAnnouncementDate], GETDATE()) < 7" UpdateCommand="UPDATE [tblAnnouncement] SET [strAnnouncementName] = @strAnnouncementName, [strAnnouncementDetail] = @strAnnouncementDetail WHERE [intAnnouncementID] = @original_intAnnouncementID">
             <DeleteParameters>
                 <asp:Parameter Name="original_intAnnouncementID" Type="Int32" />
             </DeleteParameters>
@@ -149,16 +149,15 @@
 
             <ItemTemplate>
 
-
                 <tr>
                     <td>
-                        <asp:Label ID="strAnnouncementNameLabel" runat="server" Text='<%# Eval("strAnnouncementName") %>' />
+                        <asp:Label ID="AnnouncementNameLabel" runat="server" Text='<%# Eval("strAnnouncementName") %>' />
                     </td>
                     <td>
-                        <asp:Label ID="strAnnouncementDetailLabel" runat="server" Text='<%# Eval("strAnnouncementDetail") %>' />
+                        <asp:Label ID="AnnouncementDetailLabel" runat="server" Text='<%# Eval("strAnnouncementDetail") %>' />
                     </td>
                     <td>
-                        <asp:Button href="#myModal" ID="EditButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Edit" Text="Edit" />
+                        <asp:Button ID="EditButton" runat="server" CssClass="btn btn-info btn-sm" CommandName="Edit" Text="Edit" />
                         <asp:Button ID="DeleteButton" runat="server" CssClass="btn btn-danger btn-sm" CommandName="Delete" Text="Delete" />
                     </td>
                 </tr>
