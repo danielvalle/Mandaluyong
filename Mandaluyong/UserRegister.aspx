@@ -5,7 +5,7 @@
 
 
     <!--container start-->
-    <div class="login-bg" style="background-image: url('image/citylandscape1.jpg'); background-repeat: no-repeat;
+    <div style="background-image: url('image/citylandscape1.jpg'); background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;">
         <div class="container">
