@@ -11,13 +11,13 @@ namespace Mandaluyong
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Boolean adminTest = true;
+            if (HttpContext.Current.Session["strUserType"] == null) Session["strUserType"] = 0;
 
-            if (!adminTest)
+            if ((int)HttpContext.Current.Session["strUserType"] == 1)
             {
-                maintenance_dropdown.Visible = false;
-            } 
-            
+                maintenance_dropdown.Visible = true;
+            }
+
         }
     }
 }

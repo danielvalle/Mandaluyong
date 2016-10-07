@@ -33,7 +33,7 @@ namespace Mandaluyong
                 {
 
                 }
-}
+            }
         }
 
         protected void UploadLogoButton_Click(object sender, EventArgs e)

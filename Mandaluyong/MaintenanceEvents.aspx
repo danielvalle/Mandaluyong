@@ -58,6 +58,18 @@
                         </center>
                     </div>
 
+                    <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
+                        <center>
+                        <asp:Label font-size="24px" ID="strEventLocationLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strEventLocationTextBox">Event Location: </asp:Label><br />
+
+                             <img class="img img-responsive " style="width: 30%; margin: auto" src="img/divider.png" /> 
+
+                        <div class="col-md-12 col-sm-12" style="text-align: center;"><br />
+                            <asp:TextBox ID="strEventLocationTextBox" CssClass="form-control" runat="server" /><br />
+                        </div>
+                        </center>
+                    </div>
+
 
                     <div class="col-lg-10 col-lg-offset-1" style="border-bottom: thick double #cec9c9;"><br /><br />
                         <center>

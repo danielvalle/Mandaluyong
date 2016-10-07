@@ -107,13 +107,19 @@
                             <li>
                                 <a href="CityOfficials.aspx" runat="server">Officials</a>
                             </li>
-                            <li class="dropdown" id="maintenance_dropdown" runat="server">
+                            <li visible="false" class="dropdown" id="maintenance_dropdown" runat="server">
                                 <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown"
                                     data-toggle="dropdown" href="#" runat="server">Maintenance <i class="fa fa-angle-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="MaintenanceCityInformation.aspx" id="Test" runat="server">City Information</a>
+                                    </li>
+                                    <li>
+                                        <a href="MaintenanceCityLogo.aspx" runat="server">City Logo</a>
+                                    </li>
+                                    <li>
+                                        <a href="MaintenanceCityBanner.aspx" runat="server">City Banner</a>
                                     </li>
                                     <li>
                                         <a href="MaintenanceAnnouncement.aspx" runat="server">Announcements</a>
@@ -127,10 +133,11 @@
                                     <li>
                                         <a href="MaintenancePosition.aspx" runat="server">Official's Position</a>
                                     </li>
-                                    <li>
-                                        <a href="admember.aspx" runat="server">Members</a>
-                                    </li>
+                                   
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="UserLogin.aspx" runat="server">Login</a>
                             </li>
                         </ul>
                     </div>

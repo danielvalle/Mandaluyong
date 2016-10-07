@@ -21,12 +21,13 @@
             <h2 class="form-signin-heading">Sign in Now</h2>
             <div class="login-wrap">
                
-				
-				<asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" placeholder="Email"></asp:TextBox><br/>
-				<asp:TextBox ID="TextBox2" CssClass="form-control" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox><br/>
+				<center><b>EMAIL/USERNAME:</b></center>
+				<asp:TextBox ID="txtUsername" CssClass="form-control" runat="server" ></asp:TextBox><br/>
+                <center><b>PASSWORD:</b></center>
+				<asp:TextBox ID="txtPassword" CssClass="form-control" runat="server" TextMode="Password" ></asp:TextBox>
+                <asp:Label ID="lblErrorMessage" runat="server" style="color:red" /><br />
                
-               
-				<asp:Button ID="Button1" runat="server" class="btn btn-lg btn-login btn-block " CommandName="Sign In" Text="Sign In" />
+				<asp:Button ID="btnSubmit" runat="server" class="btn btn-lg btn-login btn-block " CommandName="Sign In" Text="Sign In" OnClick="btnSubmit_Click" />
                 
 
                 <div class="registration">

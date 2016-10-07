@@ -49,6 +49,24 @@ namespace Mandaluyong {
         protected global::System.Web.UI.WebControls.TextBox strEventNameTextBox;
         
         /// <summary>
+        /// strEventLocationLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strEventLocationLabel;
+        
+        /// <summary>
+        /// strEventLocationTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox strEventLocationTextBox;
+        
+        /// <summary>
         /// strEventDescLabel control.
         /// </summary>
         /// <remarks>
