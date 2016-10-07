@@ -35,76 +35,92 @@
                         <div class="panel-body">
 
                              <div class="form-group">
-                                <asp:Label Font-Size="20px" ID="strPositionNameLabel" runat="server" CssClass="control-label col-md-4 col-sm-12 text-center" AssociatedControlID="strPositionNameTextBox">Position Name: </asp:Label>
+                                <asp:Label Font-Size="20px" ID="strPositionNameLabel" runat="server" CssClass="control-label col-md-4 col-sm-12 text-center" AssociatedControlID="txtPositionName">Position Name: </asp:Label>
                                 <div class="col-md-8 col-sm-12" style="text-align: center;">
-                                    <asp:TextBox ID="strPositionNameTextBox" CssClass="form-control" runat="server" /><br />
+                                    <asp:TextBox ID="txtPositionName" CssClass="form-control" runat="server" /><br />
                                 </div>
-                            </div>
-
-                            <div class="col-lg-10 col-lg-offset-1">
-                                <center><br />
-                                <asp:Label font-size="20px" ID="strPositionDescLabel" runat="server" CssClass="control-label col-md-12 col-sm-12" AssociatedControlID="strPositionDescTextBox">Position Description: </asp:Label><br />
-
-
-                                <asp:TextBox ID="strPositionDescTextBox" Style="overflow-y: scroll; min-height: 150px; max-height: 100%; max-width: 100%" runat="server" TextMode="MultiLine" CssClass="form-control" ></asp:TextBox>
-
-
                             </div>
 
                             <div class="col-lg-10 col-lg-offset-1">
                                 <br />
                                 <br />
                                 <center>
-                                <asp:Button runat="server" class="btn btn-lg btn-login" Text="Add" /> <br /><br />
+                                <asp:Button ID="btnSubmit" runat="server" class="btn btn-lg btn-login" Text="Add" OnClick="btnSubmit_Click" /> <br /><br />
                                 </center>
                             </div>
 
                     </section>
 
-
-
                 </div>
             </div>
         </div>
 
+        <asp:SqlDataSource ID="OfficialPositionsDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" DeleteCommand="DELETE FROM [tblPosition] WHERE [intPositionID] = @original_intPositionID AND (([strPositionName] = @original_strPositionName) OR ([strPositionName] IS NULL AND @original_strPositionName IS NULL))" InsertCommand="INSERT INTO [tblPosition] ([strPositionName]) VALUES (@strPositionName)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblPosition]" UpdateCommand="UPDATE [tblPosition] SET [strPositionName] = @strPositionName WHERE [intPositionID] = @original_intPositionID AND (([strPositionName] = @original_strPositionName) OR ([strPositionName] IS NULL AND @original_strPositionName IS NULL))">
+            <DeleteParameters>
+                <asp:Parameter Name="original_intPositionID" Type="Int32" />
+                <asp:Parameter Name="original_strPositionName" Type="String" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="strPositionName" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="strPositionName" Type="String" />
+                <asp:Parameter Name="original_intPositionID" Type="Int32" />
+                <asp:Parameter Name="original_strPositionName" Type="String" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
 
-        <div class="container">
-
-            <div class="bs-example mar-b-30 wow fadeInUp">
-                <div class="table-responsive">
-                    <table class="table table-hover table-bordered ">
-                        <thead style="color: #48cfad">
-                            <tr>
-                                
-                                <th>Position Name</th>
-                                <th>Description</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Table cell</td>                               
-                                <td>Table cell</td>
-                                <td>
-                                    <button class="btn btn-info btn-sm">Edit</button>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Table cell</td>
-                                <td>Table cell</td>
-                                <td>
-                                    <button class="btn btn-info btn-sm">Edit</button>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+        <asp:ListView ID="OfficialPositionsListView" runat="server" DataKeyNames="intPositionID" DataSourceID="OfficialPositionsDataSource">
+            <EditItemTemplate>
+                <tr style="">
+                    <td>
+                        <asp:TextBox ID="strPositionNameTextBox" runat="server" Text='<%# Bind("strPositionName") %>' />
+                    </td>
+                    <td>
+                        <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" class="btn btn-danger btn-sm" />
+                        <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" class="btn btn-info btn-sm" />
+                    </td>
+                </tr>
+            </EditItemTemplate>
+            <EmptyDataTemplate>
+                <table runat="server" style="">
+                    <tr>
+                        <td>No data was returned.</td>
+                    </tr>
+                </table>
+            </EmptyDataTemplate>
+            <ItemTemplate>
+                <tr>
+                    <td>
+                        <asp:Label ID="strPositionNameLabel" runat="server" Text='<%# Eval("strPositionName") %>' />
+                    </td>                         
+                    <td>
+                        <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" class="btn btn-danger btn-sm" />
+                        <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" class="btn btn-info btn-sm" />
+                    </td>
+                </tr>
+            </ItemTemplate>
+            <LayoutTemplate>
+                <div class="container">
+                    <div class="bs-example mar-b-30 wow fadeInUp">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered ">
+                                <thead style="color: #48cfad">
+                                    <tr>
+                                        <th>Position Name</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="itemPlaceholder" runat="server">
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-        </div>
+            </LayoutTemplate>
+        </asp:ListView>
 
 
     </div>

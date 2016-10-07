@@ -83,18 +83,21 @@
                                 </div>                      
                             </div>
                             
+                            <asp:SqlDataSource ID="OfficialPositionsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" SelectCommand="SELECT * FROM [tblPosition]"></asp:SqlDataSource>
+                            
                             <div class="form-group">                           
                                 <asp:Label font-size="20px" ID="strOfficialPosition" runat="server" CssClass="control-label col-md-4 col-sm-12 text-center" AssociatedControlID="strOfficialLNameTextBox">Position: </asp:Label>
                                 <div class="input-group margin">
                                         <div class="input-group-btn">
-                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="fa fa-caret-down"></span></button>
+                                            <asp:DropDownList ID="OfficialPositionsDropDown" runat="server" DataSourceID="OfficialPositionsDataSource" DataTextField="strPositionName" DataValueField="intPositionID"></asp:DropDownList>
+                                            <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="fa fa-caret-down"></span></button>
                                             <ul class="dropdown-menu">
                                                 <li><a href="#">Action</a></li>
                                                 <li><a href="#">Another action</a></li>
                                                 <li><a href="#">Something else here</a></li>
-                                            </ul>
+                                            </ul>-->
                                         </div><!-- /btn-group -->
-                                    </div><!-- /input-group -->
+                                </div><!-- /input-group -->
                             </div>
                             <!-- /btn-group -->
 
@@ -166,45 +169,110 @@
         <!--container end-->
 
 
-        <div class="container">
+        <asp:SqlDataSource ID="OfficialsDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:dbwebprog %>" DeleteCommand="DELETE FROM [tblOfficial] WHERE [intOfficialID] = @original_intOfficialID AND (([strOfficialFirstName] = @original_strOfficialFirstName) OR ([strOfficialFirstName] IS NULL AND @original_strOfficialFirstName IS NULL)) AND (([strOfficialLastName] = @original_strOfficialLastName) OR ([strOfficialLastName] IS NULL AND @original_strOfficialLastName IS NULL)) AND (([strOfficialMiddleName] = @original_strOfficialMiddleName) OR ([strOfficialMiddleName] IS NULL AND @original_strOfficialMiddleName IS NULL)) AND (([strOfficialDescription] = @original_strOfficialDescription) OR ([strOfficialDescription] IS NULL AND @original_strOfficialDescription IS NULL)) AND [intPositionIDFK] = @original_intPositionIDFK" OldValuesParameterFormatString="original_{0}" 
+            SelectCommand="SELECT a.*, b.* from tblOfficial a JOIN tblPosition b ON a.intPositionIDFK = b.intPositionID" 
+            UpdateCommand="UPDATE [tblOfficial] SET [strOfficialFirstName] = @strOfficialFirstName, [strOfficialLastName] = @strOfficialLastName, [strOfficialMiddleName] = @strOfficialMiddleName, [strOfficialDescription] = @strOfficialDescription, [intPositionIDFK] = @intPositionIDFK WHERE [intOfficialID] = @original_intOfficialID AND (([strOfficialFirstName] = @original_strOfficialFirstName) OR ([strOfficialFirstName] IS NULL AND @original_strOfficialFirstName IS NULL)) AND (([strOfficialLastName] = @original_strOfficialLastName) OR ([strOfficialLastName] IS NULL AND @original_strOfficialLastName IS NULL)) AND (([strOfficialMiddleName] = @original_strOfficialMiddleName) OR ([strOfficialMiddleName] IS NULL AND @original_strOfficialMiddleName IS NULL)) AND (([strOfficialDescription] = @original_strOfficialDescription) OR ([strOfficialDescription] IS NULL AND @original_strOfficialDescription IS NULL)) AND [intPositionIDFK] = @original_intPositionIDFK">
+            <DeleteParameters>
+                <asp:Parameter Name="original_intOfficialID" Type="Int32" />
+                <asp:Parameter Name="original_strOfficialFirstName" Type="String" />
+                <asp:Parameter Name="original_strOfficialLastName" Type="String" />
+                <asp:Parameter Name="original_strOfficialMiddleName" Type="String" />
+                <asp:Parameter Name="original_strOfficialDescription" Type="String" />
+                <asp:Parameter Name="original_intPositionIDFK" Type="Int32" />
+            </DeleteParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="strOfficialFirstName" Type="String" />
+                <asp:Parameter Name="strOfficialLastName" Type="String" />
+                <asp:Parameter Name="strOfficialMiddleName" Type="String" />
+                <asp:Parameter Name="strOfficialDescription" Type="String" />
+                <asp:Parameter Name="intPositionIDFK" Type="Int32" />
+                <asp:Parameter Name="original_intOfficialID" Type="Int32" />
+                <asp:Parameter Name="original_strOfficialFirstName" Type="String" />
+                <asp:Parameter Name="original_strOfficialLastName" Type="String" />
+                <asp:Parameter Name="original_strOfficialMiddleName" Type="String" />
+                <asp:Parameter Name="original_strOfficialDescription" Type="String" />
+                <asp:Parameter Name="original_intPositionIDFK" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+        <asp:ListView ID="OfficialsListView" runat="server" DataSourceID="OfficialsDataSource" DataKeyNames="intOfficialID,intPositionID">
+            <EditItemTemplate>
+                <tr style="">
 
-            <div class="bs-example mar-b-30 wow fadeInUp">
-                <div class="table-responsive">
-                    <table class="table table-hover table-bordered ">
-                        <thead style="color: #48cfad">
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Description</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Table cell</td>
-                                <td>Table cell</td>
-                                <td>Table cell</td>
-                                <td>
-                                    <button class="btn btn-info btn-sm">Edit</button>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Table cell</td>
-                                <td>Table cell</td>
-                                <td>Table cell</td>
-                                <td>
-                                    <button class="btn btn-info btn-sm">Edit</button>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                </td>
-                            </tr>
+                    <td>
+                        <asp:TextBox ID="strOfficialFirstNameTextBox" runat="server" Text='<%# Bind("strOfficialFirstName") %>' />
+                    </td>
+                    <td>
+                        <asp:TextBox ID="strOfficialLastNameTextBox" runat="server" Text='<%# Bind("strOfficialLastName") %>' />
+                    </td>
+                    <td>
+                        <asp:TextBox ID="strOfficialMiddleNameTextBox" runat="server" Text='<%# Bind("strOfficialMiddleName") %>' />
+                    </td>
+                    <td>
+                        <asp:TextBox ID="strPositionNameTextBox" runat="server" Text='<%# Bind("strPositionName") %>' />
+                    </td>
+                    <td>
+                        <asp:TextBox ID="strOfficialDescriptionTextBox" runat="server" Text='<%# Bind("strOfficialDescription") %>' />
+                    </td>
+                    <td>
+                        <asp:Button class="btn btn-info btn-sm" ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
+                        <asp:Button class="btn btn-danger btn-sm" ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
+                    </td>
+                </tr>
+            </EditItemTemplate>
+            <EmptyDataTemplate>
+                    <tr>
+                        <td>No data was returned.</td>
+                    </tr>
+            </EmptyDataTemplate>
+            <ItemTemplate>
+                <tr>
+                    <td>
+                        <asp:Label ID="strOfficialFirstNameLabel" runat="server" Text='<%# Eval("strOfficialFirstName") %>' />
+                    </td>
+                    <td>
+                        <asp:Label ID="strOfficialLastNameLabel" runat="server" Text='<%# Eval("strOfficialLastName") %>' />
+                    </td>
+                    <td>
+                        <asp:Label ID="strOfficialMiddleNameLabel" runat="server" Text='<%# Eval("strOfficialMiddleName") %>' />
+                    </td>
+                    <td>
+                        <asp:Label ID="strPositionNameLabel" runat="server" Text='<%# Eval("strPositionName") %>' />
+                    </td>
+                    <td>
+                        <asp:Label ID="strOfficialDescriptionLabel" runat="server" Text='<%# Eval("strOfficialDescription") %>' />
+                    </td>
 
-                        </tbody>
-                    </table>
+                    <td>
+                        <asp:Button class="btn btn-info btn-sm" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
+                        <asp:Button class="btn btn-danger btn-sm" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
+                    </td>
+                </tr>
+            </ItemTemplate>
+            <LayoutTemplate>
+            <div class="container">
+                <div class="bs-example mar-b-30 wow fadeInUp">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered ">
+                            <thead style="color: #48cfad">
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Middle Name</th>
+                                    <th>Position</th>
+                                    <th>Description</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tr id="itemPlaceholder" runat="server">
+                            </tr>
+                        </table>
+                    </div>
+
                 </div>
-
             </div>
-        </div>
+            </LayoutTemplate>
+        </asp:ListView>
+
     </div>
 
 </asp:Content>

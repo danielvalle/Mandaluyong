@@ -131,8 +131,7 @@
     <Content Include="img\rib2.png" />
     <Content Include="img\rib4.png" />
     <Content Include="MaintenanceAnnouncement.aspx" />
-    <Content Include="MaintenanceCityBanner.aspx" />
-    <Content Include="MaintenanceCityLogo.aspx" />
+    <Content Include="MaintenanceCityLogoBanner.aspx" />
     <Content Include="MaintenancePosition.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -168,19 +167,12 @@
     <Compile Include="MaintenanceAnnouncement.aspx.designer.cs">
       <DependentUpon>MaintenanceAnnouncement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MaintenanceCityBanner.aspx.cs">
-      <DependentUpon>MaintenanceCityBanner.aspx</DependentUpon>
+    <Compile Include="MaintenanceCityLogoBanner.aspx.cs">
+      <DependentUpon>MaintenanceCityLogoBanner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MaintenanceCityBanner.aspx.designer.cs">
-      <DependentUpon>MaintenanceCityBanner.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MaintenanceCityLogo.aspx.cs">
-      <DependentUpon>MaintenanceCityLogo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MaintenanceCityLogo.aspx.designer.cs">
-      <DependentUpon>MaintenanceCityLogo.aspx</DependentUpon>
+    <Compile Include="MaintenanceCityLogoBanner.aspx.designer.cs">
+      <DependentUpon>MaintenanceCityLogoBanner.aspx</DependentUpon>
     </Compile>
     <Compile Include="MaintenanceEvents.aspx.cs">
       <DependentUpon>MaintenanceEvents.aspx</DependentUpon>

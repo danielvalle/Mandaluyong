@@ -92,7 +92,8 @@
         <br />
         <asp:SqlDataSource ID="AnnouncementDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbwebprog %>"
             DeleteCommand="UPDATE [tblAnnouncement] SET [intBoolIsActive] = 0 WHERE [intAnnouncementID] = @original_intAnnouncementID"
-            OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblAnnouncement] WHERE [intBoolIsActive] = 1 AND DATEDIFF(dd, [dtAnnouncementDate], GETDATE()) < 7" UpdateCommand="UPDATE [tblAnnouncement] SET [strAnnouncementName] = @strAnnouncementName, [strAnnouncementDetail] = @strAnnouncementDetail WHERE [intAnnouncementID] = @original_intAnnouncementID">
+            OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblAnnouncement] WHERE [intBoolIsActive] = 1 AND DATEDIFF(dd, [dtAnnouncementDate], GETDATE()) < 7" 
+            UpdateCommand="UPDATE [tblAnnouncement] SET [strAnnouncementName] = @strAnnouncementName, [strAnnouncementDetail] = @strAnnouncementDetail WHERE [intAnnouncementID] = @original_intAnnouncementID">
             <DeleteParameters>
                 <asp:Parameter Name="original_intAnnouncementID" Type="Int32" />
             </DeleteParameters>

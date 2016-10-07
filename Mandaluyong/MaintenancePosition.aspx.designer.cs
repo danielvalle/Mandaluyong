@@ -22,30 +22,39 @@ namespace Mandaluyong {
         protected global::System.Web.UI.WebControls.Label strPositionNameLabel;
         
         /// <summary>
-        /// strPositionNameTextBox control.
+        /// txtPositionName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox strPositionNameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox txtPositionName;
         
         /// <summary>
-        /// strPositionDescLabel control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label strPositionDescLabel;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
-        /// strPositionDescTextBox control.
+        /// OfficialPositionsDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox strPositionDescTextBox;
+        protected global::System.Web.UI.WebControls.SqlDataSource OfficialPositionsDataSource;
+        
+        /// <summary>
+        /// OfficialPositionsListView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView OfficialPositionsListView;
     }
 }
