@@ -76,6 +76,15 @@ namespace Mandaluyong {
         protected global::System.Web.UI.WebControls.TextBox strOfficialLNameTextBox;
         
         /// <summary>
+        /// OfficialPositionsDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource OfficialPositionsDataSource;
+        
+        /// <summary>
         /// strOfficialPosition control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,15 @@ namespace Mandaluyong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label strOfficialPosition;
+        
+        /// <summary>
+        /// OfficialPositionsDropDown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList OfficialPositionsDropDown;
         
         /// <summary>
         /// strOfficialDescLabel control.
@@ -101,5 +119,23 @@ namespace Mandaluyong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox strOfficialDescTextBox;
+        
+        /// <summary>
+        /// OfficialsDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource OfficialsDataSource;
+        
+        /// <summary>
+        /// OfficialsListView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView OfficialsListView;
     }
 }

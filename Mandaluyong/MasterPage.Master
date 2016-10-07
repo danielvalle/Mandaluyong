@@ -116,10 +116,7 @@
                                         <a href="MaintenanceCityInformation.aspx" id="Test" runat="server">City Information</a>
                                     </li>
                                     <li>
-                                        <a href="MaintenanceCityLogo.aspx" runat="server">City Logo</a>
-                                    </li>
-                                    <li>
-                                        <a href="MaintenanceCityBanner.aspx" runat="server">City Banner</a>
+                                        <a href="MaintenanceCityLogoBanner.aspx" runat="server">City Logo and Banner</a>
                                     </li>
                                     <li>
                                         <a href="MaintenanceAnnouncement.aspx" runat="server">Announcements</a>
